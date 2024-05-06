@@ -14,6 +14,7 @@ import { Nickel } from "./pages/Nickel/Nickel";
 import { StainLessSteel } from "./pages/StainLessSteel/StainLessSteel";
 import { Copper } from "./pages/Copper/Copper";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
+import { AboutUs } from "./pages/AboutUs/AboutUs";
 
 export const Routing = () => {
 	const [navBackground, setNavBackground] = useState(
@@ -76,6 +77,7 @@ export const Routing = () => {
 				/>
 				<Route path="/home/copper-alloy" element={<Copper />} />
 				<Route path="/home/contact" element={<ContactUs />} />
+				<Route path="/home/about" element={<AboutUs />} />
 			</Routes>
 			<Footer />
 		</Router>
