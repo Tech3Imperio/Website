@@ -14,10 +14,12 @@ export const elementsData = {
         industries such as aerospace, automotive, and construction.
       </p>
       <p>
-        The specific properties of aluminum alloy can vary depending on the
-        alloy composition and treatment processes. Common types of aluminum
-        alloys include 1xxx, 3xxx, 5xxx, and 6xxx series, each with its unique
-        characteristics and applications.
+        Aluminum is another versatile element widely used in various industries,
+        especially in the manufacturing of alloys for pipes, tubes, and other
+        products. Aluminum alloys are lightweight, corrosion-resistant, and
+        exhibit good mechanical properties. They are often preferred for their
+        high strength-to-weight ratio, making them suitable for aerospace,
+        automotive, and construction applications.
       </p>
     </>,
   ],

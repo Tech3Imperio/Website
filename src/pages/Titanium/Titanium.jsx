@@ -58,7 +58,7 @@ export const Titanium = () => {
                 {Titanium_Standards.map((value, index) => {
                   return (
                     <tr key={index}>
-                      <td>{value["standards"]}</td>
+                      <th>{value["standards"]}</th>
                       <td>{value["information"]}</td>
                     </tr>
                   );

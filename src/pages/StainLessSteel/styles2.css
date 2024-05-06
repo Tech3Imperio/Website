@@ -22,25 +22,14 @@
 }
 
 .stainless-Steel-table th {
-  background-color: #f2f2f2;
+  background-color: rgba(167, 169, 172, 0.2);
   font-weight: bold;
   text-align: left;
 }
 
-.stainless-Steel-table tr:nth-child(even) {
-  background-color: #f9f9f975;
-}
-
-.stainless-Steel-table tr:hover {
-  background-color: #e6f7ff;
-}
 .stainless-Steel-table tr td ul {
   list-style-type: none;
 }
-
-/* .stain-less-steel-extras-divs div {
-  line-height: 2;
-} */
 
 .stainlessSteel {
   margin-bottom: 15px;
