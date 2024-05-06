@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Avenir;
+  font-size: normal;
+  font-weight: normal;
+  src: url("./pages/@assets/fonts/Avenir-Primary.otf") format("otf");
+}
+
+@font-face {
+  font-family: Cabin;
+  font-size: normal;
+  font-weight: normal;
+  src: url("./pages/@assets/fonts/Cabin-Secondary.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: Lexend;
+  font-size: normal;
+  font-weight: normal;
+  src: url("./pages/@assets/fonts/Lexend-Title.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-size: normal;
+  font-weight: normal;
+  src: url("./pages/@assets/fonts/OpenSans-Secondary.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-size: normal;
+  font-weight: normal;
+  src: url("./pages/@assets/fonts/Poppins-Rest.ttf") format("ttf");
+}
+
+:root {
+  --primary: #ffffff;
+  --secondary: #000000;
+  --teritary: #004aad;
+  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth !important;
+}
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.Title {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: Lexend, sans-serif;
+}
+
+.PrimaryText {
+  color: var(--teritary);
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: Avenir, sans-serif;
+}
+
+.SecondaryText {
+  font-size: 0.9rem;
+  font-family: Cabin, OpenSans;
+}
+.openSans {
+  font-family: OpenSans;
+}
+
+.cabin {
+  font-family: Cabin;
+}
+.avenir {
+  font-family: Avenir;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.paddings {
+  padding: 1.5rem;
+}
+
+.innerWidth {
+  width: 100%;
+}
+
+.button {
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  color: white;
+  background: var(--blue-gradient);
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+  font-family: Manrope, sans-serif;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+}

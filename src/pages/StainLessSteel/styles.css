@@ -1,0 +1,56 @@
+.stain-less-steel-container {
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  width: 95%;
+  margin: 20px auto;
+  margin-top: 80px;
+  align-items: flex-start;
+}
+
+.stain-less-steel-main-content {
+  padding: 20px;
+  width: 75%;
+}
+
+.stain-less-steel-extras {
+  border-radius: 8px;
+}
+
+.stain-less-steel-extras-divs .header {
+  font-size: 2em;
+  color: var(--teritary);
+  text-align: center;
+  font-weight: bold;
+}
+
+.stain-less-steel-extras-divs {
+  margin-top: 20px;
+  overflow: hidden;
+  overflow-x: scroll;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.stain-less-steel-extras-divs .sub-header {
+  color: var(--teritary);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .stain-less-steel-main-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .stain-less-steel-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .stain-less-steel-main-content {
+    width: 100%;
+  }
+}
