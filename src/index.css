@@ -1,34 +1,29 @@
 @font-face {
   font-family: Avenir;
-  font-size: normal;
   font-weight: normal;
   src: url("./pages/@assets/fonts/Avenir-Primary.otf") format("otf");
 }
 
 @font-face {
   font-family: Cabin;
-  font-size: normal;
   font-weight: normal;
   src: url("./pages/@assets/fonts/Cabin-Secondary.ttf") format("ttf");
 }
 
 @font-face {
   font-family: Lexend;
-  font-size: normal;
   font-weight: normal;
   src: url("./pages/@assets/fonts/Lexend-Title.ttf") format("ttf");
 }
 
 @font-face {
   font-family: OpenSans;
-  font-size: normal;
   font-weight: normal;
   src: url("./pages/@assets/fonts/OpenSans-Secondary.ttf") format("ttf");
 }
 
 @font-face {
   font-family: Poppins;
-  font-size: normal;
   font-weight: normal;
   src: url("./pages/@assets/fonts/Poppins-Rest.ttf") format("ttf");
 }
@@ -128,8 +123,7 @@ a {
   }
 }
 
-@media (min-width: 1280px),
-(min-width: 768px) {
+@media (min-width: 1280px), (min-width: 768px) {
   .paddings {
     padding: 2rem;
   }

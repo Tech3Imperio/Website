@@ -13,11 +13,13 @@
 
 .carousal-header {
   color: var(--primary);
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.24);
   font-size: 4rem;
   font-weight: bolder;
 }
 
 .carousal-content {
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.24);
   font-size: 2rem;
 }
 
