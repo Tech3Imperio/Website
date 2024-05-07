@@ -1,28 +1,20 @@
 .main-container {
   height: 450px;
 }
+
 .r-container {
   overflow: hidden;
   position: relative;
 }
 
-/* .swiper-slide {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .slide-image {
-  max-width: 200px;
-  max-height: 200px;
-  object-fit: contain;
-} */
+.product-name {
+  color: var(--secondary);
+}
 
 .r-head {
   margin-bottom: 2rem;
 }
+
 .r-card {
   display: flex;
   flex-direction: column;
@@ -37,7 +29,8 @@
   font-weight: 600;
   transition: all 300ms ease-in;
 }
-.r-card > img {
+
+.r-card>img {
   max-width: 250px;
   max-height: 200px;
   object-fit: contain;
@@ -50,15 +43,18 @@
   background: linear-gradient(180deg, rgba(255, 255, 255) 0%, #a7a9ac 700%);
   box-shadow: 0px 20px 20px 0px #a7a9ac;
 }
+
 .swiper-horizontal {
   overflow: visible;
 }
+
 .r-buttons {
   position: absolute;
   gap: 1.5rem;
   top: -4rem;
   right: 0;
 }
+
 .r-buttons button {
   font-size: 1.2rem;
   font-weight: bold;
@@ -70,6 +66,7 @@
   transition: all 0.3s ease-in;
   cursor: pointer;
 }
+
 .r-buttons :hover {
   border-radius: 50%;
   background-color: rgba(167, 169, 172, 0.3);
@@ -81,6 +78,7 @@
     margin-bottom: 0.5rem;
     align-items: center;
   }
+
   .r-buttons {
     position: initial;
   }
