@@ -4,27 +4,25 @@ import React from "react";
 export const ContactRight = () => {
   return (
     <aside className="contact-right">
-      <div className="contact-left-container">
-        <div className="contact-left-design">
-          <div className="contact-left-ring"></div>
-          <div className="contact-left-ring"></div>
-          <div className="contact-left-ring"></div>
-          <div className="contact-left-ring"></div>
+      <div className="contact-right-container">
+        <div className="contact-right-design">
+          <div className="contact-right-ring"></div>
+          <div className="contact-right-ring"></div>
         </div>
-        <div className="left-header-container">
-          <h1 className="left-header PrimaryText">Contact Information</h1>
-          <div className="left-header-text">
-            Reach out to us and let's connect!
+        <div className="right-contact-container">
+          <div className="right-contact-details">
+            <div className="right-contact-detail">
+              <input type="text" id="name" />
+              <label htmlFor="name">Company Name</label>
+            </div>
+            <div className="right-contact-detail">
+              <input type="text" id="name" />
+              <label htmlFor="name">Name</label>
+            </div>
           </div>
+          <div className="right-contact-details"></div>
         </div>
-        <div className="left-contact-container">
-          <div className="left-contact-details">
-            <div className="left-contact-detail"></div>
-            <div className="left-contact-detail"></div>
-          </div>
-          <div className="left-contact-details"></div>
-        </div>
-        <div className="left-contact-footer"></div>
+        <div className="right-contact-footer"></div>
       </div>
     </aside>
   );

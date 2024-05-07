@@ -18,8 +18,6 @@ export const ContactLeft = () => {
         <div className="contact-left-design">
           <div className="contact-left-ring"></div>
           <div className="contact-left-ring"></div>
-          <div className="contact-left-ring"></div>
-          <div className="contact-left-ring"></div>
         </div>
         <div className="left-header-container">
           <h1 className="left-header PrimaryText">Contact Information</h1>
@@ -34,7 +32,9 @@ export const ContactLeft = () => {
                 <FaPhone />
               </div>
               <div>
-                <Link to={`tel:+910000000000`}>+910000000000</Link>
+                <Link to={`tel:+910000000000`} target="_blank">
+                  +910000000000
+                </Link>
               </div>
             </div>
             <div className="left-contact-detail">
@@ -42,7 +42,7 @@ export const ContactLeft = () => {
                 <FaEnvelope />
               </div>
               <div>
-                <Link to={`mailto:tech@risealloys.com`}>
+                <Link to={`mailto:tech@risealloys.com`} target="_blank">
                   tech@risealloys.com
                 </Link>
               </div>
@@ -52,7 +52,10 @@ export const ContactLeft = () => {
                 <FaLocationDot />
               </div>
               <div>
-                <Link to={`https://goo.gl/maps/WS9LBcQF6RsXW9mHA`}>
+                <Link
+                  to={`https://goo.gl/maps/WS9LBcQF6RsXW9mHA`}
+                  target="_blank"
+                >
                   1, Aman Chambers, New Queens Rd, Charni Road, Mumbai,
                   Maharashtra 400004.
                 </Link>
