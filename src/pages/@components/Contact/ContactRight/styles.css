@@ -22,37 +22,61 @@
 .right-contact-detail {
   width: 45%;
   position: relative;
-  margin-bottom: 20px;
 }
 
-.right-contact-detail > input {
+.right-contact-details:nth-child(1) {
+  padding: 0px 20px;
+  justify-content: start;
+  gap: 40px;
+}
+
+.right-contact-details:nth-child(1) > .right-contact-detail {
+  width: max-content;
+}
+
+.right-contact-details:nth-child(1) > .right-contact-detail > label {
+  display: flex;
+  gap: 10px;
+}
+
+.right-contact-details:nth-child(1) > .right-contact-detail > .formtypes {
+  display: none;
+}
+
+.right-contact-detail > .forminputs {
   width: 100%;
-  padding: 10px;
   border: none;
-  border-bottom: 2px solid rgb(127, 127, 127);
-  transition: border-color 0.3s ease;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  transition: border-color 0.4s ease;
 }
 
-.right-contact-detail > label {
+.right-contact-detail > .input-label {
   position: absolute;
   top: 50%;
-  left: 2px;
+  left: 5px;
   transform: translateY(-50%);
-  font-size: 16px;
-  color: rgb(127, 127, 127);
-  font-weight: bold;
-  transition: all 0.3s ease;
+  color: #999;
+  font-size: 18px;
+  transition: all 0.4s ease;
 }
 
-/* .right-contact-detail > input:focus + label,
-.right-contact-detail > input: + label {
-  font-size: 12px;
-  font-weight: bolder;
-  top: -10px;
-  color: var(--secondary);
-} */
+.forminputs:focus,
+.forminputs:not([value=""]) + .input-label {
+  border-bottom: 1px solid #000;
+}
 
-.right-contact-detail > input:focus {
-  outline: none;
-  border-bottom: 2px solid var(--secondary);
+.forminputs:focus + .input-label,
+.forminputs:not([value=""]) + .input-label {
+  color: #000;
+  font-size: 12px;
+  top: -5px;
+  transition: all 0.4s ease;
+}
+
+.formTextArea {
+  margin: 0px 20px;
+  width: 100%;
 }
