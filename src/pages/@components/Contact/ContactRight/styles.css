@@ -44,13 +44,13 @@
   transition: all 0.3s ease;
 }
 
-.right-contact-detail > input:focus + label,
+/* .right-contact-detail > input:focus + label,
 .right-contact-detail > input: + label {
   font-size: 12px;
   font-weight: bolder;
   top: -10px;
   color: var(--secondary);
-}
+} */
 
 .right-contact-detail > input:focus {
   outline: none;
