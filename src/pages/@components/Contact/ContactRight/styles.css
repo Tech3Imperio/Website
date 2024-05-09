@@ -14,8 +14,13 @@
   border-radius: 20px;
   overflow: hidden;
 }
+
+/* .right-contact-container {
+  margin-top: 100px;
+} */
+
 .right-contact-details {
-  margin-top: 40px;
+  margin-top: 70px;
   display: flex;
   justify-content: space-around;
 }
@@ -24,32 +29,13 @@
   position: relative;
 }
 
-.right-contact-details:nth-child(1) {
-  padding: 0px 20px;
-  justify-content: start;
-  gap: 40px;
-}
-
-.right-contact-details:nth-child(1) > .right-contact-detail {
-  width: max-content;
-}
-
-.right-contact-details:nth-child(1) > .right-contact-detail > label {
-  display: flex;
-  gap: 10px;
-}
-
-.right-contact-details:nth-child(1) > .right-contact-detail > .formtypes {
-  display: none;
-}
-
 .right-contact-detail > .forminputs {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
   outline: none;
   padding: 5px;
-  font-size: 16px;
+  font-size: 18px;
   transition: border-color 0.4s ease;
 }
 
@@ -64,8 +50,8 @@
 }
 
 .forminputs:focus,
-.forminputs:not([value=""]) + .input-label {
-  border-bottom: 1px solid #000;
+.forminputs:not([value=""]) {
+  border-bottom: 2px solid #000;
 }
 
 .forminputs:focus + .input-label,
@@ -77,6 +63,69 @@
 }
 
 .formTextArea {
-  margin: 0px 20px;
   width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  resize: none;
+  color: rgba(32, 32, 32, 0.541);
+  transition: all 0.5s ease;
+}
+
+.formTextArea[placeholder] {
+  font-size: 18px;
+  opacity: 1;
+}
+
+.right-contact-details:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.right-contact-details:nth-child(3) > .right-contact-detail {
+  width: 95%;
+  /* margin-top: 40px; */
+  margin-left: 25px;
+}
+
+.right-contact-details:nth-child(3) > .right-contact-detail > .input-label {
+  font-size: 12px;
+  top: -8px;
+  left: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.formTextArea:focus,
+.right-contact-details:nth-child(4)
+  > .right-contact-detail
+  > .input-label:not([for=""])
+  + .formTextArea {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.right-contact-footer > .right-footer {
+  float: right;
+  margin-top: 70px;
+  margin-right: 20px;
+}
+
+.right-footer > .footerbutoon {
+  width: 214px;
+  height: 54px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.right-footer > .footerbutoon:hover {
+  transform: scale(1.03);
+}
+
+.right-image {
+  float: right;
+  position: relative;
+  bottom: -82px;
+  left: 125px;
 }

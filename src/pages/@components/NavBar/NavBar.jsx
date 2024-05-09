@@ -13,7 +13,6 @@ export const NavBar = (props) => {
   const open = () => {
     const isHomePage =
       window.location.pathname === "/home" || window.location.pathname === "/";
-
     if (window.innerWidth < 1000) {
       const object = document.getElementById("dropdown");
       object.style.display =

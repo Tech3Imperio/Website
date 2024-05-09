@@ -18,7 +18,9 @@ import { AboutUs } from "./pages/AboutUs/AboutUs";
 
 export const Routing = () => {
   const [navBackground, setNavBackground] = useState(
-    window.location.pathname === "/home" || window.location.pathname === "/"
+    window.location.pathname === "/home" ||
+      window.location.pathname === "/" ||
+      window.location.pathname === "/home/aboutus"
       ? false
       : true
   );
@@ -26,8 +28,10 @@ export const Routing = () => {
   useEffect(() => {
     const handleChange = () => {
       if (
-        (window.scrollY < 700 && window.location.pathname === "/home") ||
-        window.location.pathname === "/"
+        window.scrollY < 700 &&
+        (window.location.pathname === "/home" ||
+          window.location.pathname === "/" ||
+          window.location.pathname === "/home/aboutus")
       ) {
         setNavBackground(false);
       } else {
@@ -37,16 +41,17 @@ export const Routing = () => {
 
     const scrolls = () => {
       const condition =
-        window.innerWidth > 500 &&
+        window.innerWidth < 500 &&
         (window.location.pathname.indexOf("/stainless-steel") !== -1 ||
           window.location.pathname.indexOf("/aluminium-alloy") !== -1 ||
           window.location.pathname.indexOf("/titanium-alloy") !== -1 ||
           window.location.pathname.indexOf("/nickel-alloy") !== -1 ||
           window.location.pathname.indexOf("/copper-alloy") !== -1);
+
       if (condition) {
-        window.scrollTo(0, 0);
-      } else {
         window.scrollTo(0, 830);
+      } else {
+        window.scrollTo(0, 0);
       }
     };
 
@@ -88,7 +93,7 @@ export const Routing = () => {
         <Route path="/home/stainless-steel" element={<StainLessSteel />} />
         <Route path="/home/copper-alloy" element={<Copper />} />
         <Route path="/home/contact" element={<ContactUs />} />
-        <Route path="/home/about" element={<AboutUs />} />
+        <Route path="/home/aboutus" element={<AboutUs />} />
       </Routes>
       <Footer />
     </Router>

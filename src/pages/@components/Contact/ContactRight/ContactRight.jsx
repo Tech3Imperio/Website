@@ -1,25 +1,6 @@
 import "./styles.css";
+import { imageContact } from "../../../@assets/image";
 import React, { useState } from "react";
-
-const RadioButton = (props) => {
-  const { id, divid, text, checked, handleChange } = props;
-  return (
-    <div className="right-contact-detail" id={divid} onClick={handleChange}>
-      <label htmlFor={id}>
-        <input
-          type="radio"
-          name="query"
-          id={id}
-          className="formtypes"
-          checked={checked}
-          onChange={() => {}}
-        />
-        <span className="lable-text">{text}</span>
-      </label>
-    </div>
-  );
-};
-
 const Inputs = (props) => {
   var {
     id,
@@ -47,24 +28,12 @@ const Inputs = (props) => {
 };
 
 export const ContactRight = () => {
-  const [formType, setFormType] = useState([true, false, false]);
   const [form1, setForm1] = useState("");
   const [form2, setForm2] = useState("");
   const [form3, setForm3] = useState("");
   const [form4, setForm4] = useState("");
   const [message, setMessage] = useState("");
   const [rows, setRows] = useState(1);
-
-  const handleFormTypeChange = (e) => {
-    const id = e.currentTarget.id;
-    if (id === "per") {
-      setFormType([true, false, false]);
-    } else if (id === "big") {
-      setFormType([false, true, false]);
-    } else {
-      setFormType([false, false, true]);
-    }
-  };
 
   const handleForm1Change = (e) => {
     setForm1(e.target.value);
@@ -102,40 +71,16 @@ export const ContactRight = () => {
         </div>
         <div className="right-contact-container">
           <div className="right-contact-details">
-            <RadioButton
-              divid="per"
-              id="personalUse"
-              text="Personal Use"
-              checked={formType[0]}
-              handleChange={handleFormTypeChange}
-            />
-            <RadioButton
-              divid="big"
-              id="bigProject"
-              text="Big Project"
-              checked={formType[1]}
-              handleChange={handleFormTypeChange}
-            />
-            <RadioButton
-              divid="dea"
-              id="dealer"
-              text="Dealer"
-              checked={formType[2]}
-              handleChange={handleFormTypeChange}
-            />
-          </div>
-          <div className="right-contact-details">
             <Inputs
               id="form1"
               value={form1}
-              text={formType[0] ? "First Name" : "Company Name"}
+              text="Company Name"
               handleChange={handleForm1Change}
-              required={!formType[1]}
             />
             <Inputs
               id="form2"
               value={form2}
-              text={formType[0] ? "Last Name" : "Name"}
+              text="Name"
               handleChange={handleForm2Change}
               required
             />
@@ -159,17 +104,43 @@ export const ContactRight = () => {
             />
           </div>
           <div className="right-contact-details">
-            <textarea
-              name="message"
-              id="message"
-              className="formTextArea"
-              value={message}
-              onChange={handleMessageChange}
-              rows={rows}
-            />
+            <div className="right-contact-detail">
+              <textarea
+                name="message"
+                id="message"
+                className="formTextArea"
+                value={message}
+                onChange={handleMessageChange}
+                placeholder="Write your inquiry..."
+                rows={rows}
+              />
+            </div>
+            {/* <div className="right-contact-detail">
+              <label className="input-label" htmlFor={message}>
+                Message
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                className="formTextArea"
+                value={message}
+                onChange={handleMessageChange}
+                placeholder="Write your message..."
+                rows={rows}
+              />
+            </div> */}
           </div>
         </div>
-        <div className="right-contact-footer"></div>
+        <div className="right-contact-footer">
+          <div className="right-footer">
+            <button type="submit" className="button footerbutoon">
+              Submit Query
+            </button>
+          </div>
+          <div className="right-image">
+            <img src={imageContact} alt="arrows" />
+          </div>
+        </div>
       </div>
     </aside>
   );
