@@ -34,7 +34,14 @@ import copper from "./products/metal4.png";
 import nickelalloy from "./products/metal5.png";
 import steel1 from "./stainlesssteel/steel1.gif";
 import contact from "./contact/contact.png";
+import value from "./value/value.png";
 import aboutus from "./aboutus/aboutus.png";
+import aboutus1 from "./aboutus/firstabout.png";
+import aboutus2 from "./aboutus/secondabout.png";
+import aboutslider1 from "./aboutslider/aboutslider1.png";
+import aboutslider2 from "./aboutslider/aboutslider2.png";
+import aboutslider3 from "./aboutslider/aboutslider3.png";
+import aboutslider4 from "./aboutslider/aboutslider4.png";
 
 export const imageLogoW = [Wlogo_white, Wlogo_black];
 export const imageLogoH = [Hlogo_white, Hlogo_black];
@@ -85,4 +92,13 @@ export const imageProduct = [
 
 export const imageContact = [contact];
 
-export const imgabout = [aboutus];
+export const imageAbout = [aboutus, aboutus1, aboutus2];
+
+export const imageAboutslider = [
+  aboutslider1,
+  aboutslider2,
+  aboutslider3,
+  aboutslider4,
+];
+
+export const imageValue = [value];

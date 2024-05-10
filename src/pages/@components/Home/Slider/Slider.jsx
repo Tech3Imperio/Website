@@ -4,7 +4,7 @@ import "./styles.css";
 import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { data, sliderSettings } from "../../../Utils/control";
+import { data, sliderSettings } from "../../../../Utils/control";
 import { Link } from "react-router-dom";
 
 export const ProductSlider = () => {

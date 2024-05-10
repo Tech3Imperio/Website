@@ -19,7 +19,7 @@ export const NavBar = (props) => {
         object.style.display === "block" ? "none" : "block";
     } else if (isHomePage) {
       setTimeout(() => {
-        window.scrollTo({ top: 820, behavior: "smooth" });
+        window.scrollTo({ top: 1300, behavior: "smooth" });
       }, 0.1);
     }
   };
