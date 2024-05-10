@@ -88,7 +88,7 @@
 .left-content-icons {
   width: 40px;
   height: 40px;
-  background-color: rgba(0, 74, 173, 0.6);
+  background-color: transparent;
   border-radius: 50%;
   /* margin: auto; */
   display: flex;
@@ -148,13 +148,44 @@
 }
 
 @media (max-width: 1200px) {
-  .left-contact-container,
-  .left-contact-footer {
-    margin: 40px 0px 40px 0px;
+  .contact-left-ring:nth-child(1) {
+    left: 52px;
+  }
+
+  .contact-left-ring:nth-child(2) {
+    left: 15px;
+  }
+
+  .left-header {
+    font-size: 28px;
+  }
+
+  .contact-left {
+    margin-bottom: 0px;
+  }
+
+  .left-contact-details:nth-child(1) {
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 800px) {
+  .left-contact-details:nth-child(1) {
+    margin-top: 70px;
+  }
+
+  .contact-left-ring:nth-child(1) {
+    left: 400px;
+  }
+
+  .contact-left-ring:nth-child(2) {
+    left: 363px;
+  }
+
+  .left-header {
+    font-size: 40px;
+  }
+
   .contact-left {
     width: 100%;
     padding: 0% 5% 0% 5%;
@@ -162,4 +193,11 @@
 }
 
 @media (max-width: 480px) {
+  .contact-left-ring:nth-child(1) {
+    left: 52px;
+  }
+
+  .contact-left-ring:nth-child(2) {
+    left: 15px;
+  }
 }
