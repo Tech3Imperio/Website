@@ -34,6 +34,7 @@ import copper from "./products/metal4.png";
 import nickelalloy from "./products/metal5.png";
 import steel1 from "./stainlesssteel/steel1.gif";
 import contact from "./contact/contact.png";
+import aboutus from "./aboutus/aboutus.png";
 
 export const imageLogoW = [Wlogo_white, Wlogo_black];
 export const imageLogoH = [Hlogo_white, Hlogo_black];
@@ -83,3 +84,5 @@ export const imageProduct = [
 ];
 
 export const imageContact = [contact];
+
+export const imgabout = [aboutus];
