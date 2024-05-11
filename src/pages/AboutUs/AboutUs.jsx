@@ -157,15 +157,15 @@ export const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="aboutus-content padding">
-          <Carousel interval={4000} pause={false}>
-            {imageAboutslider.map((data, index) => (
-              <Carousel.Item key={index}>
-                <img className="about-carousal-images" src={data} alt="" />
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </div>
+        {/* <div className="aboutus-content padding">
+            <Carousel interval={4000} pause={false}>
+              {imageAboutslider.map((data, index) => (
+                <Carousel.Item key={index}>
+                  <img className="about-carousal-images" src={data} alt="" />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </div> */}
       </div>
     </section>
   );

@@ -102,10 +102,10 @@ a {
   border-radius: 4px;
   transition: all 300ms ease-in;
   font-family: Manrope, sans-serif;
+  cursor: pointer;
 }
 
 .button:hover {
-  cursor: pointer;
   transform: scale(1.1);
 }
 

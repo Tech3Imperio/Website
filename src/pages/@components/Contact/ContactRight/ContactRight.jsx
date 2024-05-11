@@ -51,6 +51,40 @@ export const ContactRight = () => {
     setForm4(e.target.value);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetch("https://sheetdb.io/api/v1/qe4fnx8qm5koc", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        data: [
+          {
+            Company: form1,
+            Name: form2,
+            Email: form3,
+            Number: form4,
+            Query: message,
+          },
+        ],
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // setMessage("Message sent successfully");
+        setForm1("");
+        setForm2("");
+        setForm3("");
+        setForm4("");
+        setMessage("");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+    // return false;
+  };
   const handleMessageChange = (e) => {
     const value = e.target.value;
     let matches = value.match(new RegExp("\n", "gi"));
@@ -63,7 +97,7 @@ export const ContactRight = () => {
   };
 
   return (
-    <aside className="contact-right">
+    <form className="contact-right" onSubmit={handleSubmit}>
       <div className="contact-right-container">
         <div className="contact-right-design">
           <div className="contact-right-ring"></div>
@@ -76,6 +110,7 @@ export const ContactRight = () => {
               value={form1}
               text="Company Name"
               handleChange={handleForm1Change}
+              required
             />
             <Inputs
               id="form2"
@@ -113,6 +148,7 @@ export const ContactRight = () => {
                 onChange={handleMessageChange}
                 placeholder="Write your inquiry..."
                 rows={rows}
+                required
               />
             </div>
             {/* <div className="right-contact-detail">
@@ -142,6 +178,6 @@ export const ContactRight = () => {
           </div>
         </div>
       </div>
-    </aside>
+    </form>
   );
 };

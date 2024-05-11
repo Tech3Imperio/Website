@@ -97,6 +97,18 @@
   .aboutus-header-text {
     font-size: 7rem;
   }
+  .aboutus-content {
+    flex-direction: column;
+  }
+  .aboutus-content:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-right {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
   .aboutus-header-text {
