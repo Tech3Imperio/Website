@@ -22,9 +22,10 @@ export const AboutUs = () => {
             craftsmanship and unwavering commitment to quality, Imperio became
             the beacon of elegance in railing solutions.
           </p>
-          <button className="button home-about-redirect">
-            <Link to="aboutus">Learn More</Link>
-          </button>
+
+          <Link to="aboutus" className="home-about-redirect">
+            Learn More
+          </Link>
         </div>
       </div>
     </div>

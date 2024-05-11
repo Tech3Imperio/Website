@@ -1,5 +1,5 @@
 import "./styles.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { imageAbout } from "../@assets/image";
 import {
@@ -15,11 +15,23 @@ import { imageAboutslider } from "../@assets/image";
 import Carousel from "react-bootstrap/Carousel";
 
 export const AboutUs = () => {
+  const [width, setWidth] = useState(window.innerWidth < 800);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth < 800);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
   return (
     <section className="aboutus-section">
       <div className="image-design">
         <img
-          src={imageAbout[0]}
+          src={imageAbout[!width ? 0 : 1]}
           alt=""
           style={{
             height: "80vh",
@@ -35,34 +47,27 @@ export const AboutUs = () => {
               duration: 5,
               type: "spring",
             }}
-            className="Title aboutus-header-text"
+            className="aboutus-header-text Title"
           >
-            Bringing quality alloy steel and aluminum to dealers nationwide.
-            <br />
-            We specialize in providing top-notch materials for your business
-            needs.
-            <br />
-            Discover excellence with us.
+            About Us
           </motion.h1>
         </div>
       </div>
       <div className="aboutus-container">
-        <div className="aboutus-content padding">
-          <Carousel interval={4000} pause={false}>
-            {imageAboutslider.map((data, index) => (
-              <Carousel.Item key={index}>
-                <img className="about-carousal-images" src={data} alt="" />
-              </Carousel.Item>
-            ))}
-          </Carousel>
+        <div className="aboutus-header">
+          "Bringing quality alloy steel and aluminum to dealers nationwide.{" "}
+          <br />
+          We specialize in providing top-notch materials for your business
+          needs.
+          <br />
+          Discover excellence with us."
         </div>
-        <div className="aboutus-header Title">Welcome To Rice Alloys</div>
         <div className="aboutus-content innerWidth paddings">
           <div className="about-left">
             <div className="about-image">
               <img
                 className="img-cont1"
-                src={imageAbout[1]}
+                src={imageAbout[2]}
                 alt=""
                 // width={"40%"}  height={"40%"}
               />
@@ -145,12 +150,21 @@ export const AboutUs = () => {
             <div className="about-image">
               <img
                 className="img-cont1"
-                src={imageAbout[2]}
+                src={imageAbout[3]}
                 alt=""
                 // width={"40%"}  height={"40%"}
               />
             </div>
           </div>
+        </div>
+        <div className="aboutus-content padding">
+          <Carousel interval={4000} pause={false}>
+            {imageAboutslider.map((data, index) => (
+              <Carousel.Item key={index}>
+                <img className="about-carousal-images" src={data} alt="" />
+              </Carousel.Item>
+            ))}
+          </Carousel>
         </div>
       </div>
     </section>

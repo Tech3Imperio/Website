@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.image-design img {
+  object-fit: cover;
+}
+
 .aboutus-image-header {
   position: absolute;
   top: 0;
@@ -14,15 +18,19 @@
 }
 
 .aboutus-header-text {
+  color: var(--primary);
   padding: 20px;
-  color: var(--teritary);
-  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.664);
+  font-size: 10rem;
+  text-align: center;
 }
 
 .aboutus-header {
   text-align: center;
   color: var(--teritary);
+  font-size: 20px;
+  font-style: italic;
   padding: 20px;
+  margin-top: 20px;
 }
 
 .aboutus-content {
@@ -78,4 +86,21 @@
 
 .aboutus-container > .padding {
   padding: 0px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .aboutus-header-text {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 800px) {
+  .aboutus-header-text {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 480px) {
+  .aboutus-header-text {
+    font-weight: bolder;
+    font-size: 5rem;
+  }
 }

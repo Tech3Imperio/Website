@@ -54,9 +54,9 @@ export const Value = () => {
     <section className="v-wrapper">
       <div className="value-section innerWidth paddings">
         <div className="v-right">
-          <span className="PrimaryText">
+          <div className="PrimaryText value-main-header">
             Discover the Superiority of Rice Alloys
-          </span>
+          </div>
 
           <div className="value-container">
             {valueData.map((item, index) => {

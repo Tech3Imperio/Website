@@ -35,7 +35,8 @@ import nickelalloy from "./products/metal5.png";
 import steel1 from "./stainlesssteel/steel1.gif";
 import contact from "./contact/contact.png";
 import value from "./value/value.png";
-import aboutus1 from "./aboutus/aboutus1.png";
+import aboutusLand from "./aboutus/aboutus-land.png";
+import aboutusPort from "./aboutus/aboutus-port.png";
 import aboutus2 from "./aboutus/aboutus2.png";
 import aboutus3 from "./aboutus/aboutus3.png";
 import aboutslider1 from "./aboutslider/aboutslider1.png";
@@ -46,59 +47,59 @@ import aboutslider4 from "./aboutslider/aboutslider4.png";
 export const imageLogoW = [Wlogo_white, Wlogo_black];
 export const imageLogoH = [Hlogo_white, Hlogo_black];
 export const imageNickel200 = [
-	nickel_200_pipe_fittings,
-	nickel_200_plate,
-	nickel_200_tube,
+  nickel_200_pipe_fittings,
+  nickel_200_plate,
+  nickel_200_tube,
 ];
 export const imageNickel201 = [
-	nickel_201_flanges,
-	nickel_201_pipe_fittings,
-	nickel_201_plate,
-	nickel_201_rod,
-	nickel_201_round_bar,
-	nickel_201_tube,
+  nickel_201_flanges,
+  nickel_201_pipe_fittings,
+  nickel_201_plate,
+  nickel_201_rod,
+  nickel_201_round_bar,
+  nickel_201_tube,
 ];
 export const imageNickelOther = [nickel_alloy_pipe, nickel_alloy_tube_grade];
 export const imageSlider = [
-	[
-		slider1Land,
-		slider2Land,
-		slider3Land,
-		slider4Land,
-		slider5Land,
-		slider6Land,
-		slider7Land,
-	],
-	[
-		slider1Port,
-		slider2Port,
-		slider3Port,
-		slider4Port,
-		slider5Port,
-		slider6Port,
-		slider7Port,
-	],
+  [
+    slider1Land,
+    slider2Land,
+    slider3Land,
+    slider4Land,
+    slider5Land,
+    slider6Land,
+    slider7Land,
+  ],
+  [
+    slider1Port,
+    slider2Port,
+    slider3Port,
+    slider4Port,
+    slider5Port,
+    slider6Port,
+    slider7Port,
+  ],
 ];
 
 export const imageSteel = [steel1];
 
 export const imageProduct = [
-	aluminium,
-	titanimumalloy,
-	stainlesssteel,
-	copper,
-	nickelalloy,
+  aluminium,
+  titanimumalloy,
+  stainlesssteel,
+  copper,
+  nickelalloy,
 ];
 
 export const imageContact = [contact];
 
-export const imageAbout = [aboutus1, aboutus2, aboutus3];
+export const imageAbout = [aboutusLand, aboutusPort, aboutus2, aboutus3];
 
 export const imageAboutslider = [
-	aboutslider1,
-	aboutslider2,
-	aboutslider3,
-	aboutslider4,
+  aboutslider1,
+  aboutslider2,
+  aboutslider3,
+  aboutslider4,
 ];
 
 export const imageValue = [value];

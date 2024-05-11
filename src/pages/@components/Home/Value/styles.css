@@ -62,3 +62,32 @@
 .value-content {
   font-size: 17px;
 }
+
+@media (max-width: 1200px) {
+  .value-section {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .v-right {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .value-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .v-right {
+    width: 100%;
+  }
+  .value-image {
+    width: 100%;
+  }
+  .value-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
