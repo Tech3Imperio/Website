@@ -11,13 +11,11 @@ import {
 
 export const NavBar = (props) => {
   const open = () => {
-    const isHomePage =
-      window.location.pathname === "/home" || window.location.pathname === "/";
     if (window.innerWidth < 1000) {
       const object = document.getElementById("dropdown");
       object.style.display =
         object.style.display === "block" ? "none" : "block";
-    } else if (isHomePage) {
+    } else if (window.location.pathname === "") {
       setTimeout(() => {
         window.scrollTo({ top: 1300, behavior: "smooth" });
       }, 0.1);
@@ -37,7 +35,7 @@ export const NavBar = (props) => {
       }}
     >
       <div className="container-fluid">
-        <Link to="/home" className="navbar-brand">
+        <Link to="" className="navbar-brand">
           {logo}
         </Link>
         <button
@@ -60,7 +58,7 @@ export const NavBar = (props) => {
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
               <div data-bs-dismiss="offcanvas" aria-label="Close">
-                <Link to="/home">{logo}</Link>
+                <Link to="">{logo}</Link>
               </div>
             </h5>
             <button
@@ -75,7 +73,7 @@ export const NavBar = (props) => {
               <li className="nav-item">
                 <div className="nav-link active">
                   <div data-bs-dismiss="offcanvas" aria-label="Close">
-                    <Link className="Link" to="/home">
+                    <Link className="Link" to="">
                       Home
                     </Link>
                   </div>
@@ -84,7 +82,7 @@ export const NavBar = (props) => {
               <li className="nav-item">
                 <div className="nav-link active">
                   <div data-bs-dismiss="offcanvas" aria-label="Close">
-                    <Link className="Link" to="/home/aboutus">
+                    <Link className="Link" to="aboutus">
                       About Us
                     </Link>
                   </div>
@@ -99,27 +97,27 @@ export const NavBar = (props) => {
 
                     <div className="nav-dropdown-content" id="dropdown">
                       <div data-bs-dismiss="offcanvas" aria-label="Close">
-                        <Link className="Link" to="/home/aluminium-alloy">
+                        <Link className="Link" to="aluminium-alloy">
                           Aluminium Alloy
                         </Link>
                       </div>
                       <div data-bs-dismiss="offcanvas" aria-label="Close">
-                        <Link className="Link" to="/home/titanium-alloy">
+                        <Link className="Link" to="titanium-alloy">
                           Titanium Alloy
                         </Link>
                       </div>
                       <div data-bs-dismiss="offcanvas" aria-label="Close">
-                        <Link className="Link" to="/home/stainless-steel">
+                        <Link className="Link" to="stainless-steel">
                           Stainless Steel
                         </Link>
                       </div>
                       <div data-bs-dismiss="offcanvas" aria-label="Close">
-                        <Link className="Link" to="/home/copper-alloy">
+                        <Link className="Link" to="copper-alloy">
                           Copper & Alloy
                         </Link>
                       </div>
                       <div data-bs-dismiss="offcanvas" aria-label="Close">
-                        <Link className="Link" to="/home/nickel-alloy">
+                        <Link className="Link" to="nickel-alloy">
                           Nickel Alloy
                         </Link>
                       </div>
@@ -130,7 +128,7 @@ export const NavBar = (props) => {
               {/* <li className="nav-item">
                 <div className="nav-link active">
                   <div data-bs-dismiss="offcanvas" aria-label="Close">
-                    <Link className="Link" to="/home/blog">
+                    <Link className="Link" to="blog">
                     Blog
                   </Link>
                   </div>
@@ -139,7 +137,7 @@ export const NavBar = (props) => {
               <li className="nav-item">
                 <div className="nav-link active">
                   <div data-bs-dismiss="offcanvas" aria-label="Close">
-                    <Link className="Link" to="/home/contact">
+                    <Link className="Link" to="contact">
                       Contact Us
                     </Link>
                   </div>

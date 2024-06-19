@@ -19,9 +19,7 @@ import { Page404 } from "./pages/404/404";
 
 export const Routing = () => {
   const [navBackground, setNavBackground] = useState(
-    window.location.pathname === "/home" ||
-      window.location.pathname === "/" ||
-      window.location.pathname === "/home/aboutus"
+    window.location.pathname === "/" || window.location.pathname === "/aboutus"
       ? false
       : true
   );
@@ -30,9 +28,8 @@ export const Routing = () => {
     const handleChange = () => {
       if (
         window.scrollY < 700 &&
-        (window.location.pathname === "/home" ||
-          window.location.pathname === "/" ||
-          window.location.pathname === "/home/aboutus")
+        (window.location.pathname === "/" ||
+          window.location.pathname === "/aboutus")
       ) {
         setNavBackground(false);
       } else {
@@ -86,15 +83,14 @@ export const Routing = () => {
     <Router>
       <NavBar background={navBackground} />
       <Routes>
-        <Route path="/" element={<Navigate replace to="/home" />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/home/aluminium-alloy" element={<Aluminum />} />
-        <Route path="/home/titanium-alloy" element={<Titanium />} />
-        <Route path="/home/nickel-alloy" element={<Nickel />} />
-        <Route path="/home/stainless-steel" element={<StainLessSteel />} />
-        <Route path="/home/copper-alloy" element={<Copper />} />
-        <Route path="/home/contact" element={<ContactUs />} />
-        <Route path="/home/aboutus" element={<AboutUs />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/aluminium-alloy" element={<Aluminum />} />
+        <Route path="/titanium-alloy" element={<Titanium />} />
+        <Route path="/nickel-alloy" element={<Nickel />} />
+        <Route path="/stainless-steel" element={<StainLessSteel />} />
+        <Route path="/copper-alloy" element={<Copper />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/aboutus" element={<AboutUs />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer />

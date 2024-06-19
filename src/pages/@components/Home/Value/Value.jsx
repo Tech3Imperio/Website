@@ -75,11 +75,9 @@ export const Value = () => {
               );
             })}
           </div>
-          <div className="value-button">
-            <button className="button val-btn">
-              <Link to="contact">Get a Quote</Link>
-            </button>
-          </div>
+          <Link className="value-button" to="contact">
+            <button className="button val-btn">Get a Quote</button>
+          </Link>
         </div>
         <div className="v-left">
           <div className="value-image">
