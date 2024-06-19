@@ -104,7 +104,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="copyright">
-          <p>&copy; 2024 Imperio Railing System </p>
+          <p>&copy; 2024 Rise Alloys </p>
         </div>
       </div>
     </footer>

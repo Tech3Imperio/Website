@@ -30,6 +30,8 @@
   border-radius: 5px;
   width: 75%;
   height: 47px;
+  padding-left: 10px;
+  font-weight: 600;
 }
 
 .footer-content:nth-child(2) {
@@ -54,6 +56,11 @@
 .submit-btn {
   width: 20%;
   height: fit-content;
+  background: radial-gradient(
+    circle,
+    rgba(0, 189, 255, 1) 0%,
+    rgba(24, 84, 222, 1) 100%
+  );
 }
 
 .text-display:hover {

@@ -14,7 +14,7 @@ export const Value = () => {
       {
         header: "Product Showcase",
         content:
-          "An interactive gallery displaying different types of railing systems offered by Imperio, with a focus on aluminum and stainless steel railing products.",
+          "Explore our premium aluminum, steel, and copper products in our interactive gallery. Discover exceptional quality and expert craftsmanship at Rise Alloys, setting us apart in the industry. Contact us today for high-quality solutions tailored to your needs",
       },
     ],
     [
@@ -22,7 +22,7 @@ export const Value = () => {
       {
         header: "Get in Touch",
         content:
-          "Ready to discover the power of top-quality alloys? Contact us today to discuss your specific requirements or learn more about our stainless steel, copper, and nickel alloy offerings.",
+          "Ready for top-tier alloys? Contact us to explore stainless steel, copper, and nickel alloy products. Let's exceed your expectations with our unmatched quality and tailored solutions.",
       },
     ],
     [
@@ -30,7 +30,7 @@ export const Value = () => {
       {
         header: "Customisation Options",
         content:
-          "We customise our products to suit your specific needs and preferences.",
+          "Discover tailored aluminium, steel, copper, and nickel products at Rise Alloys. Optimal performance and satisfaction guaranteed with our bespoke solutions. Experience industry-leading standards and expertly customized alloys today.",
       },
     ],
     [
@@ -38,7 +38,7 @@ export const Value = () => {
       {
         header: "Quality Assurance",
         content:
-          "Information on the high-quality materials and manufacturing standards used in Rise Alloys's, along with any certifications or warranties offered.",
+          "Rise Alloys: Superior quality, premium materials, stringent standards. Trusted choice with certifications and warranties for reliability. Experience excellence today!",
       },
     ],
     [
@@ -46,7 +46,7 @@ export const Value = () => {
       {
         header: "Project Portfolio",
         content:
-          "A showcase of past projects featuring Imperio's railing systems, demonstrating their versatility and aesthetic appeal in various settings such as Billionaire homes, 5 star hotels and buildings.",
+          "Explore our versatile metal systems in our project portfolio. Witness excellence in luxurious homes and prestigious hotels. Elevate aesthetics and functionality with our steel, aluminum, nickel, and copper solutions.",
       },
     ],
   ];
@@ -77,7 +77,7 @@ export const Value = () => {
           </div>
           <div className="value-button">
             <button className="button val-btn">
-              <Link to="contact">Get Coat</Link>
+              <Link to="contact">Get a Quote</Link>
             </button>
           </div>
         </div>

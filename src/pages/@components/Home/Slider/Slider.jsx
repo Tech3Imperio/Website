@@ -12,11 +12,12 @@ export const ProductSlider = () => {
     <section id="products" className="main-container">
       <div className="paddings innerWidth r-container">
         <div className="r-head flexColStart">
-          <span className="PrimaryText">Popular Railings</span>
+          <span className="PrimaryText">Products</span>
         </div>
 
         <Swiper
           className="slide-swiper"
+          q
           modules={[Autoplay]}
           {...sliderSettings}
         >
