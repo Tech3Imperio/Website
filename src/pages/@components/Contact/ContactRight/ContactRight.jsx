@@ -1,103 +1,57 @@
 import "./styles.css";
 import { imageContact } from "../../../@assets/image";
-import React, { useState } from "react";
-const Inputs = (props) => {
-  var {
-    id,
-    value,
-    type = "text",
-    required = false,
-    text,
-    handleChange,
-  } = props;
-  return (
-    <div className="right-contact-detail">
-      <input
-        type={type}
-        className="forminputs"
-        id={id}
-        value={value}
-        onChange={handleChange}
-        required={required}
-      />
-      <label className="input-label" htmlFor={id}>
-        {text}
-      </label>
-    </div>
-  );
-};
+import React, { useState, useRef } from "react";
 
 export const ContactRight = () => {
-  const [form1, setForm1] = useState("");
-  const [form2, setForm2] = useState("");
-  const [form3, setForm3] = useState("");
-  const [form4, setForm4] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    company: "",
+    name: "",
+    email: "",
+    number: "",
+    query: "",
+  });
   const [rows, setRows] = useState(1);
+  const [formStatus, setFormStatus] = useState("");
+  const formRef = useRef(null);
+  const iframeRef = useRef(null);
 
-  const handleForm1Change = (e) => {
-    setForm1(e.target.value);
-  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
 
-  const handleForm2Change = (e) => {
-    setForm2(e.target.value);
-  };
-
-  const handleForm3Change = (e) => {
-    setForm3(e.target.value);
-  };
-
-  const handleForm4Change = (e) => {
-    setForm4(e.target.value);
+    if (name === "query") {
+      let matches = value.match(new RegExp("\n", "gi"));
+      setRows(matches ? matches.length + 1 : 1);
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://sheetdb.io/api/v1/qe4fnx8qm5koc", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        data: [
-          {
-            Company: form1,
-            Name: form2,
-            Email: form3,
-            Number: form4,
-            Query: message,
-          },
-        ],
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        // setMessage("Message sent successfully");
-        setForm1("");
-        setForm2("");
-        setForm3("");
-        setForm4("");
-        setMessage("");
-      })
-      .catch((error) => {
-        console.error("Error:", error);
+    setFormStatus("Submitting...");
+
+    formRef.current.submit();
+    iframeRef.current.onload = () => {
+      setFormStatus("Query submitted successfully!");
+      setFormData({
+        company: "",
+        name: "",
+        email: "",
+        number: "",
+        query: "",
       });
-    // return false;
-  };
-  const handleMessageChange = (e) => {
-    const value = e.target.value;
-    let matches = value.match(new RegExp("\n", "gi"));
-    if (matches) {
-      setRows(matches.length + 1);
-    } else {
       setRows(1);
-    }
-    setMessage(value);
+    };
   };
 
   return (
-    <form className="contact-right" onSubmit={handleSubmit}>
+    <form
+      ref={formRef}
+      className="contact-right"
+      action="https://script.google.com/macros/s/AKfycbzozV9L9IHoN3Zdvhc_EJg3bCIqOSB2ZeuTtnaq57aYbiDt-Avl61UGuNhe4iF4psjL/exec"
+      method="post"
+      target="hidden_iframe"
+      onSubmit={handleSubmit}
+    >
       <div className="contact-right-container">
         <div className="contact-right-design">
           <div className="contact-right-ring"></div>
@@ -105,71 +59,59 @@ export const ContactRight = () => {
         </div>
         <div className="right-contact-container">
           <div className="right-contact-details">
-            <Inputs
-              id="form1"
-              value={form1}
-              text="Company Name"
-              handleChange={handleForm1Change}
-              required
-            />
-            <Inputs
-              id="form2"
-              value={form2}
-              text="Name"
-              handleChange={handleForm2Change}
-              required
-            />
+            {["company", "name"].map((field) => (
+              <div key={field} className="right-contact-detail">
+                <input
+                  type="text"
+                  className="forminputs"
+                  id={field}
+                  name={field}
+                  value={formData[field]}
+                  onChange={handleChange}
+                  required
+                />
+                <label className="input-label" htmlFor={field}>
+                  {field.charAt(0).toUpperCase() + field.slice(1)}
+                </label>
+              </div>
+            ))}
           </div>
           <div className="right-contact-details">
-            <Inputs
-              id="form3"
-              type="email"
-              value={form3}
-              text="Email"
-              handleChange={handleForm3Change}
-              required
-            />
-            <Inputs
-              id="form4"
-              value={form4}
-              type="tel"
-              text="Phone Number"
-              handleChange={handleForm4Change}
-              required
-            />
+            {["email", "number"].map((field) => (
+              <div key={field} className="right-contact-detail">
+                <input
+                  type={field === "email" ? "email" : "tel"}
+                  className="forminputs"
+                  id={field}
+                  name={field}
+                  value={formData[field]}
+                  onChange={handleChange}
+                  required
+                />
+                <label className="input-label" htmlFor={field}>
+                  {field.charAt(0).toUpperCase() + field.slice(1)}
+                </label>
+              </div>
+            ))}
           </div>
           <div className="right-contact-details">
             <div className="right-contact-detail">
               <textarea
-                name="message"
-                id="message"
+                name="query"
+                id="query"
                 className="formTextArea"
-                value={message}
-                onChange={handleMessageChange}
+                value={formData.query}
+                onChange={handleChange}
                 placeholder="Write your inquiry..."
                 rows={rows}
                 required
               />
             </div>
-            {/* <div className="right-contact-detail">
-              <label className="input-label" htmlFor={message}>
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                className="formTextArea"
-                value={message}
-                onChange={handleMessageChange}
-                placeholder="Write your message..."
-                rows={rows}
-              />
-            </div> */}
           </div>
         </div>
         <div className="right-contact-footer">
           <div className="right-footer">
-            <button type="submit" className="button footerbutoon">
+            <button type="submit" className="button footerbutton">
               Submit Query
             </button>
           </div>
@@ -178,6 +120,11 @@ export const ContactRight = () => {
           </div>
         </div>
       </div>
+      <iframe
+        ref={iframeRef}
+        name="hidden_iframe"
+        style={{ display: "none" }}
+      ></iframe>
     </form>
   );
 };

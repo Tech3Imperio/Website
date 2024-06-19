@@ -1,18 +1,19 @@
 .contact-header {
-    margin-top: 80px;
-    text-align: center;
+  margin-top: 80px;
+  text-align: center;
 }
 
 .contact-container {
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
 }
 
-@media (max-width:800px) {
-    .contact-container {
-        flex-direction: column;
-    }
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column-reverse;
+  }
 }
 
-@media (max-width:480px) {}
+@media (max-width: 480px) {
+}
