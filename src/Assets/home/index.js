@@ -1,4 +1,4 @@
-import value from "./value.png";
+import value from "./value.jpeg";
 
 export { value };
 export * from "./slider";
