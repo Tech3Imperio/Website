@@ -25,7 +25,7 @@ export const ProductSlider = () => {
             <SwiperSlide key={i}>
               <Link
                 to={card.url}
-                className="flexColStart  r-card"
+                className="flexColStart r-card"
                 onClick={() => window.scrollTo({ top: 0 })}
               >
                 <img src={card.image} alt={card.name + "railings"} />

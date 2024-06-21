@@ -1,9 +1,9 @@
-.aluminum-extras-divs p {
+.extras-divs p {
   margin: 30px;
   margin-top: 5px;
 }
 
-.aluminum-extras-divs .aluminum-table {
+.extras-divs .aluminum-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 10px;
@@ -17,22 +17,23 @@
 }
 
 .aluminum-table th {
+  font-family: "Raleway";
   background-color: rgba(167, 169, 172, 0.2);
 }
 
-.aluminum-extras-divs .aluminum-list {
+.extras-divs .aluminum-list {
   list-style: bold;
   margin: 20px;
   margin-top: 5px;
 }
 
-.aluminum-extras-divs .aluminum-table th:first-child,
-.aluminum-extras-divs .aluminum-table td:first-child {
+.extras-divs .aluminum-table th:first-child,
+.extras-divs .aluminum-table td:first-child {
   text-align: left;
 }
 
 @media (max-width: 480px) {
-  .aluminum-extras-divs p {
+  .extras-divs p {
     margin: 10px;
     margin-top: 5px;
   }

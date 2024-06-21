@@ -90,16 +90,16 @@
 }
 
 .enquire-button {
-  background-color: #4285f4;
+  background: var(--blue-gradient);
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .enquire-button:hover {
-  background-color: #3367d6;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 480px) {

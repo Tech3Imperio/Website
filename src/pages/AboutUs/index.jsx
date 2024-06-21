@@ -44,7 +44,7 @@ export const AboutUs = () => {
         </div>
       </div>
       <div className="aboutus-container">
-        <div className="aboutus-header">
+        <div className="aboutus-header Raleway">
           "Bringing quality alloy steel and aluminum to dealers nationwide.
           <br />
           We specialize in providing top-notch materials for your business
@@ -64,11 +64,11 @@ export const AboutUs = () => {
                 <FaUserCog />
               </div>
               <div className="about-right-content-text">
-                <strong>Expertise: </strong> Our team comprises seasoned
-                metallurgists and engineers with a wealth of knowledge in
-                stainless steel, aluminum, and nickel alloys. Their expertise
-                enables us to create alloys that offer exceptional performance
-                and durability.
+                <strong className="Raleway">Expertise: </strong> Our team
+                comprises seasoned metallurgists and engineers with a wealth of
+                knowledge in stainless steel, aluminum, and nickel alloys. Their
+                expertise enables us to create alloys that offer exceptional
+                performance and durability.
               </div>
             </div>
             <div className="about-right-content">
@@ -76,10 +76,10 @@ export const AboutUs = () => {
                 <FaBalanceScale />
               </div>
               <div className="about-right-content-text">
-                <strong>Quality: </strong> Quality is our top priority. We
-                adhere to strict quality control measures throughout the
-                manufacturing process to ensure that every alloy meets the
-                highest standards of excellence.
+                <strong className="Raleway">Quality: </strong> Quality is our
+                top priority. We adhere to strict quality control measures
+                throughout the manufacturing process to ensure that every alloy
+                meets the highest standards of excellence.
               </div>
             </div>
             <div className="about-right-content">
@@ -87,10 +87,11 @@ export const AboutUs = () => {
                 <FaLightbulb />
               </div>
               <div className="about-right-content-text">
-                <strong>Innovation: </strong> Innovation is at the heart of our
-                operations. We invest in research and development to stay at the
-                forefront of alloy technology, constantly improving our products
-                to meet evolving industry demands.
+                <strong className="Raleway">Innovation: </strong> Innovation is
+                at the heart of our operations. We invest in research and
+                development to stay at the forefront of alloy technology,
+                constantly improving our products to meet evolving industry
+                demands.
               </div>
             </div>
           </div>
@@ -102,10 +103,11 @@ export const AboutUs = () => {
                 <FaWrench />
               </div>
               <div className="about-left-content-text">
-                <strong>Stainless Steel Alloys: </strong> We offer a wide range
-                of stainless steel alloys suitable for various applications,
-                including corrosion-resistant grades for harsh environments and
-                high-strength alloys for structural purposes.
+                <strong className="Raleway">Stainless Steel Alloys: </strong> We
+                offer a wide range of stainless steel alloys suitable for
+                various applications, including corrosion-resistant grades for
+                harsh environments and high-strength alloys for structural
+                purposes.
               </div>
             </div>
             <div className="about-left-content">
@@ -113,10 +115,10 @@ export const AboutUs = () => {
                 <FaBolt />
               </div>
               <div className="about-left-content-text">
-                <strong>Nickel Alloys: </strong> Our nickel alloys excel in
-                extreme environments, providing exceptional resistance to heat,
-                corrosion, and wear. They are used in aerospace, chemical
-                processing, and other demanding industries.
+                <strong className="Raleway">Nickel Alloys: </strong> Our nickel
+                alloys excel in extreme environments, providing exceptional
+                resistance to heat, corrosion, and wear. They are used in
+                aerospace, chemical processing, and other demanding industries.
               </div>
             </div>
             <div className="about-left-content">
@@ -124,10 +126,10 @@ export const AboutUs = () => {
                 <FaIndustry />
               </div>
               <div className="about-left-content-text">
-                <strong>Aluminum Alloys: </strong> Our aluminum alloys are known
-                for their lightweight, corrosion resistance, and versatility,
-                making them ideal for automotive, aerospace, and industrial
-                applications.
+                <strong className="Raleway">Aluminum Alloys: </strong> Our
+                aluminum alloys are known for their lightweight, corrosion
+                resistance, and versatility, making them ideal for automotive,
+                aerospace, and industrial applications.
               </div>
             </div>
           </div>

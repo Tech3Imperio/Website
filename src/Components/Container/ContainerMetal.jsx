@@ -21,7 +21,9 @@ export const ContainerMetal = (props) => {
         <div className="image-container">
           <img className="content-img" src={image.src} alt={image.altText} />
           <div className="content-text">
-            <h3 className="content-text-header">{header.toUpperCase()}</h3>
+            <h3 className="content-text-header Raleway">
+              {header.toUpperCase()}
+            </h3>
             {imageText ? (
               <p className="content-text-content">{imageText}</p>
             ) : (
@@ -30,7 +32,7 @@ export const ContainerMetal = (props) => {
           </div>
         </div>
         <div className="text-container">
-          <h3 className="content-header">{contentHeader}</h3>
+          <h3 className="content-header Raleway">{contentHeader}</h3>
           <>{content}</>
           {availability ? (
             <div className="content-availability">
@@ -49,7 +51,7 @@ export const ContainerMetal = (props) => {
             <></>
           )}
           <div className="button-container">
-            <Link to="/contact" className="enquire-button">
+            <Link to="/contact" className="enquire-button Raleway">
               {button}
             </Link>
           </div>

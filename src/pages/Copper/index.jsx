@@ -1,16 +1,13 @@
 import "./styles.css";
-import "./styles2.css";
 import React from "react";
 import { DropDown, ContainerMetal } from "../../Components";
-import { elementsData } from "../../Data/element";
-import { Copper_Comparison, Copper_Forms } from "./data";
+import { Copper_Comparison, Copper_Forms, elementsData } from "../../Data";
 
 export const Copper = () => {
-  //
   return (
-    <div className="copper-container">
+    <div className="containers">
       <DropDown position={3} />
-      <div className="copper-main-content">
+      <div className="main-content">
         <ContainerMetal
           header="Copper Alloy"
           image={elementsData["copper"][0]}
@@ -18,8 +15,8 @@ export const Copper = () => {
           content={elementsData["copper"][1]}
           button="Enquire Us"
         />
-        <div className="copper-extras">
-          <div className="copper-extras-divs">
+        <div className="extras">
+          <div className="extras-divs">
             <h3 className="header">Cu ETP and Copper Tellurium Products</h3>
             <p>
               In marine conditions, these alloys are prone to selective
@@ -57,7 +54,7 @@ export const Copper = () => {
               information.
             </p>
           </div>
-          <div className="copper-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">
               Copper Alloy Composition and Mechanical Properties
             </h3>
@@ -92,7 +89,7 @@ export const Copper = () => {
               <li>Beryllium-copper</li>
             </ul>
           </div>
-          <div className="copper-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">Cu Copper Chemical Element</h3>
             <table className="copper-table">
               <thead>

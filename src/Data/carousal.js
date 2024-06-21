@@ -26,13 +26,13 @@ const imageSlider = [
     homeSliderH7,
   ],
   [
-    (homeSliderL1,
+    homeSliderL1,
     homeSliderL2,
     homeSliderL3,
     homeSliderL4,
     homeSliderL5,
     homeSliderL6,
-    homeSliderL7),
+    homeSliderL7,
   ],
 ];
 export const carousals = [

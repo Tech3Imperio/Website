@@ -1,5 +1,5 @@
 .contact-right {
-  width: 55%;
+  min-width: 55%;
   height: 680px;
   padding: 0% 8% 0% 0%;
   margin-bottom: 25px;

@@ -29,7 +29,7 @@ export const Carousels = (props) => {
           <img className="carousal-images" src={data.img} alt={data.altText} />
           <Carousel.Caption>
             <h3 className="carousal-header Title">{data.header}</h3>
-            <p className="carousal-content SecondaryText">{data.p}</p>
+            <p className="carousal-content SecondaryText Raleway">{data.p}</p>
           </Carousel.Caption>
         </Carousel.Item>
       ))}

@@ -2,10 +2,10 @@ import "./styles.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  FaSquareFacebook as Facebook,
+  FaFacebookF as Facebook,
   FaXTwitter as Twitter,
   FaInstagram as Instagram,
-  FaLinkedin as Linkedin,
+  FaLinkedinIn as Linkedin,
 } from "react-icons/fa6";
 import { logoWhiteW } from "../../Assets";
 
@@ -25,55 +25,47 @@ export const Footer = () => {
 
         <p>
           <Link to={`https://goo.gl/maps/WS9LBcQF6RsXW9mHA`} target="_blank">
-            New Queens Road, Mumbai, Mum - 400004
+            New Queens Road, Mumbai - 400004
           </Link>
         </p>
       </div>
       <div className="footer-content">
         <div className="contacts">
-          <h5>Contact Us</h5>
-          <p>
-            <span style={{ fontWeight: "bold" }}>Phone Number:</span> +91 93725
-            93981
-          </p>
-          <p>
-            <span style={{ fontWeight: "bold" }}>Email: </span>
-            info@risealloys.com
-          </p>
-          <p>
-            <span style={{ fontWeight: "bold" }}>Website: </span>
-            www.risealloys.com
-          </p>
+          <h5 className="Raleway">Contact Us</h5>
+          <div className="contacts-content">
+            <p>
+              <strong className="Raleway">Phone Number:</strong> +91 93725 93981
+            </p>
+            <p>
+              <strong className="Raleway">Email: </strong>
+              info@risealloys.com
+            </p>
+            <p>
+              <strong className="Raleway">Website: </strong>
+              www.risealloys.com
+            </p>
+          </div>
         </div>
         <div className="footer-social">
-          <h5>Follow Us</h5>
+          <h5 className="Raleway">Follow Us</h5>
           <div className="footer-icons">
             <div className="ficons">
-              <Link
-                target="_blank"
-                to="https://www.facebook.com/imperiorailingsystem/"
-              >
+              <Link target="_blank" to="www.facebook.com">
                 <Facebook />
               </Link>
             </div>
             <div className="ficons">
-              <Link target="_blank" to="https://twitter.com/ImperioRailing">
+              <Link target="_blank" to="twitter.com">
                 <Twitter />
               </Link>
             </div>
             <div className="ficons">
-              <Link
-                target="_blank"
-                to="https://www.instagram.com/imperio.railings/"
-              >
+              <Link target="_blank" to="www.instagram.com">
                 <Instagram />
               </Link>
             </div>
             <div className="ficons">
-              <Link
-                target="_blank"
-                to="https://www.linkedin.com/company/imperiorailingsystems/"
-              >
+              <Link target="_blank" to="www.linkedin.com">
                 <Linkedin />
               </Link>
             </div>
@@ -84,7 +76,7 @@ export const Footer = () => {
         <div className="emails">
           <input
             type="email"
-            className="email-input"
+            className="email-input Raleway"
             placeholder="Enter your email"
           />
           <button
@@ -103,7 +95,7 @@ export const Footer = () => {
             Submited
           </div>
         </div>
-        <div className="copyright">
+        <div className="copyright Raleway ">
           <p>&copy; 2024 Rise Alloys </p>
         </div>
       </div>

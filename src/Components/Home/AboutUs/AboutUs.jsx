@@ -12,7 +12,9 @@ export const AboutUs = () => {
           <img src={homeSliderH1} alt="About Us" />
         </div>
         <div className="about-content-text">
-          <h3 className="about-content-header SecondaryText">Rise Alloys</h3>
+          <h3 className="about-content-header SecondaryText Raleway">
+            Rise Alloys
+          </h3>
           <br />
           <p>
             Imperio Designs, established in 2011 with a vision to revolutionize

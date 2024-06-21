@@ -20,7 +20,7 @@ export const Value = () => {
       icons: <FaRegEnvelope />,
       header: "Get in Touch",
       content:
-        "Ready for top-tier alloys? Contact us to explore st  ainless steel, copper, and nickel alloy products. Let's exceed your expectations with our unmatched quality and tailored solutions.",
+        "Ready for top-tier alloys? Contact us to explore stainless steel, copper, and nickel alloy products. Let's exceed your expectations with our unmatched quality and tailored solutions.",
     },
     {
       icons: <IoDiamondOutline />,

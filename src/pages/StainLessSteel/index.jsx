@@ -1,8 +1,6 @@
 import "./styles.css";
-import "./styles2.css";
 import React from "react";
 import { DropDown, ContainerMetal } from "../../Components";
-import { elementsData } from "../../Data/element";
 import {
   materialData1,
   materialData2,
@@ -10,16 +8,16 @@ import {
   materialData4,
   materialData5,
   materialData6,
-  materialData7,
-} from "./data";
+  materialData7,elementsData
+} from "../../Data";
 import { steelImg } from "../../Assets";
 
 export const StainLessSteel = () => {
   return (
-    <div className="stain-less-steel-container">
+    <div className="containers">
       <DropDown position={2} />
 
-      <div className="stain-less-steel-main-content">
+      <div className="main-content">
         <ContainerMetal
           header="Stainless Steel"
           image={elementsData["stainLessSteel"][0]}
@@ -27,8 +25,8 @@ export const StainLessSteel = () => {
           content={elementsData["stainLessSteel"][1]}
           button="Enquire Us"
         />
-        <div className="stain-less-steel-extras">
-          <div className="stain-less-steel-extras-divs">
+        <div className="extras">
+          <div className="extras-divs">
             <h3 className="header">
               Austenitic Stainless Steel Seamless Tube and Ferritic Round Pipes
               supplier in India
@@ -76,40 +74,34 @@ export const StainLessSteel = () => {
               more.
             </p>
           </div>
-          <div className="stain-less-steel-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">Stainless Steel Pipe/ Tube Specification</h3>
             <div>
-              <span style={{ fontWeight: "bold" }}>Product Name: </span>
+              <strong>Product Name: </strong>
               Stainless Steel Pipe, SS Tube, SS Tubing
             </div>
             <div>
-              <span style={{ fontWeight: "bold" }}>
-                SS Pipe Outside Diameter:{" "}
-              </span>
+              <strong>SS Pipe Outside Diameter: </strong>
               6.00 mm OD up to 914.4 mm OD, Sizes up to 24” NB available
               Ex-stock, OD Size Steel Tubes available Ex-stock
             </div>
             <div>
-              <span style={{ fontWeight: "bold" }}>
-                SS Pipe Thickness Range:{" "}
-              </span>
+              <strong>SS Pipe Thickness Range: </strong>
               0.3mm - 50 mm, SCH 5, SCH10, SCH 10S, SCH 40, SCH 80, SCH 80S, SCH
               160, SCH XXS, SCH XS
             </div>
             <div>
-              <span style={{ fontWeight: "bold" }}>SS Pipe Length: </span>
+              <strong>SS Pipe Length: </strong>
               Single Random, Double Random & Required Length End: Plain End,
               Beveled End, Threaded
             </div>
             <div>
-              <span style={{ fontWeight: "bold" }}>Type: </span>
+              <strong>Type: </strong>
               SS Seamless Pipes | SS ERW Pipes | SS Welded Pipes | SS Fabricated
               Pipes | SS CDW Tubes | SS Honed Tubes
             </div>
             <div>
-              <span style={{ fontWeight: "bold" }}>
-                SS Pipe Outside Finish:{" "}
-              </span>
+              <strong>SS Pipe Outside Finish: </strong>
               2B, No.4, No.1, No.8 Mirror Finish for Stainless Steel Pipes,
               Finish as per customer Requirements
             </div>
@@ -118,12 +110,11 @@ export const StainLessSteel = () => {
               specifications.
             </div>
             <div>
-              <span style={{ fontWeight: "bold" }}>Our Network: </span> Mumbai,
-              Chennai, Bangalore, Gujarat, India, Malaysia, Singapore, Saudi
-              Arabia
+              <strong>Our Network: </strong> Mumbai, Chennai, Bangalore,
+              Gujarat, India, Malaysia, Singapore, Saudi Arabia
             </div>
           </div>
-          <div className="stain-less-steel-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">Types of Stainless Steel Pipe/ Tube</h3>
             <div className="stainlessSteel">
               <h4 className="sub-header">
@@ -134,18 +125,16 @@ export const StainLessSteel = () => {
                 in India
               </p>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   Available ASTM A312 Stainless Steel Tubing product forms
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 Stainless Steel Straight Tubing</li>
                   <li>ASTM A312 Stainless Steel Seamless Tubing</li>
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  SS Tubing Typical manufacturing specifications
-                </span>
+                <strong>SS Tubing Typical manufacturing specifications</strong>
                 <ul>
                   <li>ASTM A312</li>
                   <li>ASTM A213</li>
@@ -155,26 +144,22 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>End Protection:</span>
+                <strong>End Protection:</strong>
                 Plastic Caps
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Delivery Condition:</span>
+                <strong>Delivery Condition:</strong>
                 Annealed and Pickled, Polished, Bright Annealed, Cold Drawn
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  Inspection, Test Reports:
-                </span>
+                <strong>Inspection, Test Reports:</strong>
                 Mill Test Certificates, EN 10204 3.1, Chemical Reports,
                 Mechanical Reports, PMI Test Reports, Visual Inspection Reports,
                 Third Party Inspection Reports, NABL Approved Lab Reports,
                 Destructive Test Report, Non Destructive Test Reports
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  ASTM A312 Stainless Steel Tubing Type:
-                </span>
+                <strong>ASTM A312 Stainless Steel Tubing Type:</strong>
                 Seamless / ERW / Welded / Fabricated / LSAW Pipes / Seam-welded
                 / Redrawn
               </div>
@@ -206,24 +191,18 @@ export const StainLessSteel = () => {
                 SS Tubing sizes in regular stock:
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  Round Stainless Steel Pipe:
-                </span>
+                <strong>Round Stainless Steel Pipe:</strong>
                 <p>
                   16, 17, 18, 19, 20, 21, 22, 23, 25, 28, 31.8, 35, 36, 38.1,
                   48, 50.8, 60, 63.5, 76.2, 89, 101, 114 mm
                 </p>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  Square Stainless Steel Pipe:
-                </span>
+                <strong>Square Stainless Steel Pipe:</strong>
                 <p>17, 18, 19, 20, 21, 22, 23, 24, 25, 28, 30, 36, 38, 50 mm</p>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  Rectangle Stainless Steel Pipe:
-                </span>
+                <strong>Rectangle Stainless Steel Pipe:</strong>
                 <p>
                   10*30, 10*40, 10*50, 20*10, 23*11, 24*12, 25*13, 28*25, 28*13,
                   29*14, 30*15, 30*20, 30*22, 34*22, 36*23, 50*25, 60*30, 75*45,
@@ -231,7 +210,7 @@ export const StainLessSteel = () => {
                 </p>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Thickness:</span>
+                <strong>Thickness:</strong>
                 <p>
                   Exact 0.25, 0.28, 0.32, 0.37, 0.41, 0.51, 0.61, 0.71, 0.91,
                   1.11, 1.15, 1.41 mm
@@ -247,7 +226,7 @@ export const StainLessSteel = () => {
                 India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>Trade Name & size:</span>
+                <strong>Trade Name & size:</strong>
                 <ul>
                   <li>
                     Seamless stainless steel tube with ASTM A269 ASTM A213
@@ -300,9 +279,7 @@ export const StainLessSteel = () => {
                 Indian Government for Export Excellence for 6 consecutive Years.
               </p>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  2018 We offer Best price on
-                </span>
+                <strong>2018 We offer Best price on</strong>
                 <ul>
                   <li>Small Diameter Stainless Steel pipes</li>
                   <li>2 Inch Seamless Stainless Steel Pipe</li>
@@ -319,26 +296,24 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Origin Standard:</span>
+                <strong>Origin Standard:</strong>
                 American Standard, Russia Standard, Janpanese Standard, European
                 Standard
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  SHORTEST Possible Delivery:
-                </span>
+                <strong>SHORTEST Possible Delivery:</strong>
                 Shutdown / Emergency/ Project Rush Demands
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Certification:</span>
+                <strong>Certification:</strong>
                 ISO EN 10204 3.1/ 3.1B/ 3.2, PED, DNV, TUV.
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>End:</span>
+                <strong>End:</strong>
                 Plain End, Beveled End, Threaded
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Manufacturers:</span>
+                <strong>Manufacturers:</strong>
                 <ul>
                   <li>Sumitomo Metals, Japan</li>
                   <li>Nippon Steel Corporation, Japan</li>
@@ -363,9 +338,9 @@ export const StainLessSteel = () => {
                 Indian Government for Export Excellence for 6 consecutive Years.
               </p>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   In 2018 Special offer, get 10% flat discount, India Factory:
-                </span>
+                </strong>
                 <ul>
                   <li>Seamless stainless steel pipe</li>
                   <li>Thick Wall Seamless Stainless Steel Pipe</li>
@@ -383,15 +358,13 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  Clients reference list:
-                </span>
+                <strong>Clients reference list:</strong>
                 ISC (Japan), ISC (Iran), BHEL (India), Media air-conditioning,
                 SUMSUNG (Korea), GNG Co., Ltd. (Korea), and ZAN (Japan). GE
                 (USA) etc.
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Specification:</span>
+                <strong>Specification:</strong>
                 ASTM A-213 / ASME SA-213, ASTM A-269 / ASME SA-269, ASTM A312 /
                 ASME SA312, EN10216-5, DIN17458
               </div>
@@ -417,7 +390,7 @@ export const StainLessSteel = () => {
                 steel tube from Steel Tubes India
               </p>
               <div>
-                <span style={{ fontWeight: "bold" }}>Marking:</span>
+                <strong>Marking:</strong>
                 All Stainless Steel ASTM A312 Stainless Steel tubes are marked
                 as follows: Standard, Grade, OD, Thickness, Length, Heat No. (Or
                 according to the customer’s request.)
@@ -457,9 +430,7 @@ export const StainLessSteel = () => {
                 SS Welded pipe, Jindal Welded pipe Stainless Steel
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  Dealer & distributor of:
-                </span>
+                <strong>Dealer & distributor of:</strong>
                 <ul>
                   <li>Polish Round Welded Stainless Steel Pipe</li>
                   <li>Manufacture stainless steel welded flexible pipe tube</li>
@@ -470,9 +441,7 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  SS Tube Specifications:
-                </span>
+                <strong>SS Tube Specifications:</strong>
                 <p>
                   ASTM A312 Standard Specification for Seamless, Welded, and
                   Heavily Cold Worked Austenitic Stainless Steel Pipes
@@ -513,9 +482,9 @@ export const StainLessSteel = () => {
                 India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Welded tube Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>Polish Round Welded Stainless Steel Tube</li>
                   <li>Manufacture stainless steel welded flexible Tube</li>
@@ -534,9 +503,9 @@ export const StainLessSteel = () => {
                 Steel Protection tube, SS Protection tube manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Protection tube Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>Capillary welded stainless steel pipe</li>
                   <li>Thermocouple protection Tube</li>
@@ -567,10 +536,10 @@ export const StainLessSteel = () => {
                 pipe, A312 CDS pipe manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Cold Drawn Seamless pipe Trade Name
                   & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>Polish Round Welded Stainless Steel Tube</li>
                   <li>Manufacture stainless steel welded flexible Tube</li>
@@ -590,10 +559,10 @@ export const StainLessSteel = () => {
                 tube manufacturers in India, Offer Great Price.
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Extruded Seamless Tube Trade Name &
                   Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 Cold Drawn Seamless tube suppliers</li>
                   <li>
@@ -619,10 +588,10 @@ export const StainLessSteel = () => {
                 manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Extruded Seamless Pipe Trade Name &
                   Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 Cold Drawn Seamless tube suppliers</li>
                   <li>
@@ -647,9 +616,9 @@ export const StainLessSteel = () => {
                 S30400 Round Tube manufacturers in India.
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Round Tube Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Extruded Seamless Tube suppliers</li>
                   <li>
@@ -680,9 +649,9 @@ export const StainLessSteel = () => {
                 S30400 Square Tube manufacturers in India.
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Square Tube Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Square Tube suppliers</li>
                   <li>ASTM A312 Stainless Steel Square Tube Manufacturer</li>
@@ -709,9 +678,9 @@ export const StainLessSteel = () => {
                 S30400 Coiled Tubing manufacturers in India.
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Coiled Tubing Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Coiled Tubing suppliers</li>
                   <li>ASTM A312 Stainless Steel Coiled Tubing Manufacturer</li>
@@ -738,9 +707,9 @@ export const StainLessSteel = () => {
                 A312 UNS S30400 Rectangular Tube manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Rectangular Tube Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Rectangular Tube suppliers</li>
                   <li>
@@ -770,9 +739,9 @@ export const StainLessSteel = () => {
                 S30400 Tubing bends manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Tubing bends Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Tubing bends suppliers</li>
                   <li>ASTM A312 Stainless Steel Tubing bends Manufacturer</li>
@@ -790,12 +759,12 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Finish:</span>
+                <strong>Finish:</strong>
                 2B MIll Finish , No.4 finish, BA Finish, 400 Grit Finish, 550
                 Grit Finish, 600 Grit Finish
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Thickness:</span>
+                <strong>Thickness:</strong>
                 0.5mm, 0.6mm, 0.7mm, 0.8mm, 1.0mm, 1.2mm, 1.5mm, 1.6mm, 2.0mm,
                 2.5mm, 3.0mm
               </div>
@@ -811,10 +780,10 @@ export const StainLessSteel = () => {
                 tubing manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel High temperature alloy tubing Trade
                   Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>
                     ASTM A312 UNS S30400 High temperature alloy tubing suppliers
@@ -847,9 +816,9 @@ export const StainLessSteel = () => {
                 Tubería manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Tubería Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Tubería suppliers</li>
                   <li>ASTM A312 Stainless Steel Tubería Manufacturer</li>
@@ -874,9 +843,9 @@ export const StainLessSteel = () => {
                 manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Tubo Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Tubo suppliers</li>
                   <li>ASTM A312 Stainless Steel Tubo Manufacturer</li>
@@ -891,7 +860,7 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Material:</span>
+                <strong>Material:</strong>
                 TP201, TP202, XM-19, TP304, TP304L, TP304H, TP304N, TP304LN,
                 TP309S, TP309H, TP309Cb, TP309HCb, TP310S, TP310H, TP310Cb,
                 TP310S, TP310H, TP310Cb, TP310HCb, TP310HCbN, TP310HCbLN, TP316,
@@ -900,7 +869,7 @@ export const StainLessSteel = () => {
                 TP348, TP348H, XM-15, TP444
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Shapes:</span>
+                <strong>Shapes:</strong>
                 Round Polished Pipes, Square Polished Pipes, Rectangular
                 Polished Pipes, Special Shapes Polished Pipes
               </div>
@@ -914,9 +883,9 @@ export const StainLessSteel = () => {
                 UNS S30400 Precision tube manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Precision tube Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Precision tube suppliers</li>
                   <li>ASTM A312 Stainless Steel Precision tube Manufacturer</li>
@@ -934,7 +903,7 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Standard:</span>
+                <strong>Standard:</strong>
                 ASTM A213 /ASME SA 213, ASTM A269/ASME SA269 , A312, A511, A789,
                 A790, A376, EN 10216-5, EN 10297,DIN 17456, DIN 17458, GOST
                 9941, GOST 9940, JIS G3446 JIS G3447 JISG3448 JIS G3459 JIS
@@ -950,9 +919,9 @@ export const StainLessSteel = () => {
                 UNS S30400 Capillary tube manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Capillary tube Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Capillary tube suppliers</li>
                   <li>ASTM A312 Stainless Steel Capillary tube Manufacturer</li>
@@ -970,15 +939,14 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Material:</span>{" "}
-                TP304/304L/304H, 316/316L, 321/321H, 317/317L, 347/347H, 309S,
-                310S, S31803, S32205, S2570, S32760, S32304, 904L, 08X18H10,
-                03X18H11, 08X18H10T, 12X18H10T, 08X17H14M2, 03X17H14M2,
-                10X17H13M2T, 20X23H18, SUS304TP, SUS304LTP, SUS304HTP, SUS316TP,
-                SUS316LTP, SUS316HTP, SUS321TP, SUS321HTP, SUS347TP, SUS347HTP,
-                SUS310STP, SUS317TP, SUS890LTP, EN1.4301, 1.4306, 1.4948,
-                1.4401, 1.4404, 1.4571, 1.4541, 1.4833, 1.4878, 1.4550, 1.4462,
-                1.4438, 1.4845.
+                <strong>Material:</strong> TP304/304L/304H, 316/316L, 321/321H,
+                317/317L, 347/347H, 309S, 310S, S31803, S32205, S2570, S32760,
+                S32304, 904L, 08X18H10, 03X18H11, 08X18H10T, 12X18H10T,
+                08X17H14M2, 03X17H14M2, 10X17H13M2T, 20X23H18, SUS304TP,
+                SUS304LTP, SUS304HTP, SUS316TP, SUS316LTP, SUS316HTP, SUS321TP,
+                SUS321HTP, SUS347TP, SUS347HTP, SUS310STP, SUS317TP, SUS890LTP,
+                EN1.4301, 1.4306, 1.4948, 1.4401, 1.4404, 1.4571, 1.4541,
+                1.4833, 1.4878, 1.4550, 1.4462, 1.4438, 1.4845.
               </div>
             </div>
             <div className="stainlessSteel">
@@ -992,10 +960,10 @@ export const StainLessSteel = () => {
                 seamless tubing (HFS) manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Hot finished seamless tubing (HFS)
                   Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>
                     SS Hot finished seamless tubing (HFS) suppliersASTM A312 UNS
@@ -1020,21 +988,18 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Nominal Dia:</span> 1/2" to
-                32" NB for seamless pipe
+                <strong>Nominal Dia:</strong> 1/2" to 32" NB for seamless pipe
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Schedules:</span> 5S, 10S,
-                40S, 80S, 10, 20, 30...120, 140, 160, XXS
+                <strong>Schedules:</strong> 5S, 10S, 40S, 80S, 10, 20, 30...120,
+                140, 160, XXS
               </div>
               <div>
                 All dimensions are in accordance with ANSI B36.19 and ANSI
                 B36.10
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  Size Range for tubing:
-                </span>
+                <strong>Size Range for tubing:</strong>
                 OD: 1/4" (6.25mm) to 8" (203mm), WT 0.02" (0.5mm) to 0.5"(12mm)
               </div>
             </div>
@@ -1049,10 +1014,10 @@ export const StainLessSteel = () => {
                 tubing (CDS) manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Cold drawn seamless tubing (CDS)
                   Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>
                     ASTM A312 UNS S30400 Cold drawn seamless tubing (CDS)
@@ -1077,17 +1042,16 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>ASTM:</span> A213, A269,
-                B163, B167, B668, A632, A789, A790
+                <strong>ASTM:</strong> A213, A269, B163, B167, B668, A632, A789,
+                A790
                 <br />
-                <span style={{ fontWeight: "bold" }}>ASME:</span> SA213, SB163,
-                SB167, SB668, SA789, SA790
+                <strong>ASME:</strong> SA213, SB163, SB167, SB668, SA789, SA790
                 <br />
-                <span style={{ fontWeight: "bold" }}>NACE:</span> MR0175
+                <strong>NACE:</strong> MR0175
                 <br />
-                <span style={{ fontWeight: "bold" }}>EN:</span> 10216-5 TCI
+                <strong>EN:</strong> 10216-5 TCI
                 <br />
-                <span style={{ fontWeight: "bold" }}>DIN:</span> 17458 TCI
+                <strong>DIN:</strong> 17458 TCI
               </div>
             </div>
             <div className="stainlessSteel">
@@ -1101,10 +1065,10 @@ export const StainLessSteel = () => {
                 resistance welded (ERW) manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Electric resistance welded (ERW)
                   Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>
                     ASTM A312 UNS S30400 Electric resistance welded (ERW)
@@ -1139,10 +1103,10 @@ export const StainLessSteel = () => {
                 manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Drawn over mandrel (DOM) Trade Name
                   & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>
                     ASTM A312 UNS S30400 Drawn over mandrel (DOM) suppliers
@@ -1175,10 +1139,10 @@ export const StainLessSteel = () => {
                 Tube, A312 UNS S30400 Heat Exchanger Tube manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Heat Exchanger Tube Trade Name &
                   Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Heat Exchanger Tube suppliers</li>
                   <li>
@@ -1208,9 +1172,9 @@ export const StainLessSteel = () => {
                 S30400 Finned Tube manufacturers in India
               </h6>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   ASTM A312 Stainless Steel Finned Tube Trade Name & Size:
-                </span>
+                </strong>
                 <ul>
                   <li>ASTM A312 UNS S30400 Finned Tube suppliers</li>
                   <li>ASTM A312 Stainless Steel Finned Tube Manufacturer</li>
@@ -1228,37 +1192,34 @@ export const StainLessSteel = () => {
                 </ul>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Test:</span> Direct-reading
-                Spectrograph, Hydrostatic testing machine, X-ray detector, UI
-                trasonic flaw detector, Magnetic particle detector
+                <strong>Test:</strong> Direct-reading Spectrograph, Hydrostatic
+                testing machine, X-ray detector, UI trasonic flaw detector,
+                Magnetic particle detector
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Process:</span> Cold drawn,
-                Cold rolled, Precision Rolled for Seamless Pipe or Tube
+                <strong>Process:</strong> Cold drawn, Cold rolled, Precision
+                Rolled for Seamless Pipe or Tube
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>Equipment:</span> Press
-                machine, Bending machine, Pushing Machine, electric bevelling
-                machine Sand-blasting machine, etc
+                <strong>Equipment:</strong> Press machine, Bending machine,
+                Pushing Machine, electric bevelling machine Sand-blasting
+                machine, etc
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
-                  Stainless Steel Pipe/ Tube Origin:
-                </span>{" "}
-                West Europe / Japanese / Indian / USA / Korean / American /
-                European
+                <strong>Stainless Steel Pipe/ Tube Origin:</strong> West Europe
+                / Japanese / Indian / USA / Korean / American / European
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>
+                <strong>
                   Test Certificates for Stainless Steel Pipe/ Tube:
-                </span>{" "}
+                </strong>{" "}
                 Manufacturer Test Certificate as per EN 10204 / 3.1B, Raw
                 Materials Certificate, 100% Radiography Test Report, Third Party
                 Inspection Report
               </div>
             </div>
           </div>
-          <div className="stain-less-steel-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">
               Stainless Steel Pipe/ Tube Latest Price List
             </h3>
@@ -1381,7 +1342,7 @@ export const StainLessSteel = () => {
               </ul>
             </div>
           </div>
-          <div className="stain-less-steel-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">
               Stainless Steel Pipe/ Tube composition and properties
             </h3>
@@ -1415,7 +1376,7 @@ export const StainLessSteel = () => {
               </tbody>
             </table>
           </div>
-          <div className="stain-less-steel-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">SS Pipes Chemical Composition</h3>
             <table className="stainless-Steel-table">
               <thead>
@@ -1447,7 +1408,7 @@ export const StainLessSteel = () => {
               </tbody>
             </table>
           </div>
-          <div className="stain-less-steel-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">
               Stainless Steel Tube Mechanical Properties
             </h3>
@@ -1476,7 +1437,7 @@ export const StainLessSteel = () => {
               </tbody>
             </table>
           </div>
-          <div className="stain-less-steel-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">SS Pipe Dimension</h3>
             <h4 className="sub-header">
               Searching Stainless Steel Pipe suppliers in India? Exporter of SS
@@ -1529,7 +1490,7 @@ export const StainLessSteel = () => {
               </tbody>
             </table>
           </div>
-          <div className="stain-less-steel-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">
               Stainless Steel Pipes & Tubes Manufacturing Process
             </h3>
@@ -1539,7 +1500,7 @@ export const StainLessSteel = () => {
               style={{ mixBlendMode: "multiply" }}
             />
           </div>
-          <div className="stain-less-steel-extras-divs">
+          <div className="extras-divs">
             <h3 className="header">SS Pipe and Tube Application</h3>
             <ul>
               <li>Chemicals</li>

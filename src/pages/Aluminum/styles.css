@@ -1,4 +1,4 @@
-.aluminum-container {
+.containers {
   background-color: var(--primary);
   color: var(--secondary);
   display: flex;
@@ -8,23 +8,24 @@
   align-items: flex-start;
 }
 
-.aluminum-main-content {
+.main-content {
   padding: 20px;
   width: 75%;
 }
 
-.aluminum-extras {
+.extras {
   border-radius: 8px;
 }
 
-.aluminum-extras-divs .header {
+.extras-divs .header {
   font-size: 2em;
   color: var(--teritary);
   text-align: center;
   font-weight: bold;
+  font-family: "Raleway";
 }
 
-.aluminum-extras-divs {
+.extras-divs {
   margin-top: 20px;
   overflow: hidden;
   overflow-x: scroll;
@@ -33,26 +34,36 @@
   margin-bottom: 15px;
 }
 
-.aluminum-extras-divs .sub-header {
+.extras-divs::-webkit-scrollbar {
+  display: none;
+}
+
+.extras-divs {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.extras-divs .sub-header {
   color: var(--teritary);
   font-size: 20px;
   font-weight: bold;
   margin-top: 20px;
+  font-family: "Raleway";
 }
 
 @media screen and (max-width: 480px) {
-  .aluminum-main-content {
+  .main-content {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .aluminum-container {
+  .containers {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .aluminum-main-content {
+  .main-content {
     width: 100%;
   }
 }

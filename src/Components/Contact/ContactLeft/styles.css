@@ -1,5 +1,5 @@
 .contact-left {
-  width: 40%;
+  min-width: 40%;
   height: 680px;
   padding: 0% 0% 0% 10%;
   margin-bottom: 25px;

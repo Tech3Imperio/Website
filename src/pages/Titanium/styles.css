@@ -1,58 +1,35 @@
-.titanium-container {
-  background-color: var(--primary);
-  color: var(--secondary);
-  display: flex;
-  width: 95%;
-  margin: 20px auto;
-  margin-top: 80px;
-  align-items: flex-start;
-}
-
-.titanium-main-content {
-  padding: 20px;
-  width: 75%;
-}
-
-.titanium-extras {
-  border-radius: 8px;
-}
-
-.titanium-extras-divs .header {
-  font-size: 2em;
-  color: var(--teritary);
-  text-align: center;
-  font-weight: bold;
-}
-
-.titanium-extras-divs {
-  margin-top: 20px;
-  overflow: hidden;
-  overflow-x: scroll;
+.extras-divs p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 15px;
 }
 
-.titanium-extras-divs .sub-header {
-  color: var(--teritary);
-  font-size: 20px;
+.extras-divs ul {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.titanium-table {
+  width: 100%;
+  overflow-y: scroll;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.titanium-table th,
+.titanium-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.titanium-table th {
+  font-family: "Raleway";
+  background-color: rgba(167, 169, 172, 0.2);
   font-weight: bold;
-  margin-top: 20px;
+  text-align: left;
 }
 
-@media screen and (max-width: 480px) {
-  .titanium-main-content {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .titanium-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .titanium-main-content {
-    width: 100%;
-  }
+.titanium-table ul {
+  list-style-type: disc;
 }

@@ -20,7 +20,7 @@ export const DropDown = ({ position }) => {
           style={{ borderRadius: !isOpen[index] && "20px" }}
           onClick={() => handleDropdownClick(index)}
         >
-          <div className="dropbtn-text">Aluminium Alloy</div>
+          <div className="dropbtn-text Raleway">Aluminium Alloy</div>
           <i className={`fa fa-arrow-down ${isOpen[index] && "open"}`}></i>
         </button>
         <div

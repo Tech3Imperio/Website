@@ -1,58 +1,55 @@
-.stain-less-steel-container {
-  background-color: var(--primary);
-  color: var(--secondary);
-  display: flex;
-  width: 95%;
-  margin: 20px auto;
-  margin-top: 80px;
-  align-items: flex-start;
-}
-
-.stain-less-steel-main-content {
-  padding: 20px;
-  width: 75%;
-}
-
-.stain-less-steel-extras {
-  border-radius: 8px;
-}
-
-.stain-less-steel-extras-divs .header {
-  font-size: 2em;
-  color: var(--teritary);
-  text-align: center;
-  font-weight: bold;
-}
-
-.stain-less-steel-extras-divs {
-  margin-top: 20px;
-  overflow: hidden;
-  overflow-x: scroll;
+.extras-divs p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 15px;
 }
 
-.stain-less-steel-extras-divs .sub-header {
-  color: var(--teritary);
-  font-size: 20px;
+.extras-divs ul {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.stainless-Steel-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.stainless-Steel-table th,
+.stainless-Steel-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.stainless-Steel-table th {
+  font-family: "Raleway";
+  background-color: rgba(167, 169, 172, 0.2);
   font-weight: bold;
-  margin-top: 20px;
+  text-align: left;
 }
 
-@media screen and (max-width: 480px) {
-  .stain-less-steel-main-content {
-    width: 100%;
-  }
+.stainless-Steel-table tr td ul {
+  list-style-type: none;
 }
 
-@media screen and (max-width: 768px) {
-  .stain-less-steel-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
+.stainlessSteel {
+  margin-bottom: 15px;
+}
 
-  .stain-less-steel-main-content {
-    width: 100%;
-  }
+.stainlessSteel div {
+  line-height: 2;
+}
+
+.stainlessSteel ul {
+  line-height: 1;
+}
+
+.extras-divs div ul {
+  list-style-type: circle;
+}
+
+.extras-divs div ul li {
+  margin-bottom: 8px;
+  position: relative;
 }
