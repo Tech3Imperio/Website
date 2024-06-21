@@ -1,8 +1,7 @@
 import "./styles.css";
 import "./styles2.css";
 import React from "react";
-import { ContainerMetal } from "../@components/Container/ContainerMetal";
-import { DropDown } from "../@components/DropDown/DropDown";
+import { DropDown, ContainerMetal } from "../../Components";
 import { elementsData } from "../../Data/element";
 import {
   Titanium_Alloys_Chemical_Element,

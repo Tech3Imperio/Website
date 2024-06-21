@@ -1,8 +1,7 @@
 import "./styles.css";
 import "./styles2.css";
 import React from "react";
-import { DropDown } from "../@components/DropDown/DropDown";
-import { ContainerMetal } from "../@components/Container/ContainerMetal";
+import { DropDown, ContainerMetal } from "../../Components";
 import { elementsData } from "../../Data/element";
 import { Copper_Comparison, Copper_Forms } from "./data";
 

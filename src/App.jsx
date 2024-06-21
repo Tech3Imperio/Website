@@ -1,10 +1,12 @@
-import "./App.css";
-import { Routing } from "./Routing";
+import { NavBar, Footer } from "./Components";
+import { Outlet } from "react-router-dom";
 
-function App() {
+function App({ navBackground }) {
   return (
     <div className="App">
-      <Routing />
+      <NavBar background={navBackground} />
+      <Outlet />
+      <Footer />
     </div>
   );
 }

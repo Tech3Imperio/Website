@@ -1,9 +1,7 @@
 import "./styles.css";
 import "./styles2.css";
 import React from "react";
-import { imageSteel } from "../@assets/image";
-import { DropDown } from "../@components/DropDown/DropDown";
-import { ContainerMetal } from "../@components/Container/ContainerMetal";
+import { DropDown, ContainerMetal } from "../../Components";
 import { elementsData } from "../../Data/element";
 import {
   materialData1,
@@ -14,6 +12,7 @@ import {
   materialData6,
   materialData7,
 } from "./data";
+import { steelImg } from "../../Assets";
 
 export const StainLessSteel = () => {
   return (
@@ -1535,7 +1534,7 @@ export const StainLessSteel = () => {
               Stainless Steel Pipes & Tubes Manufacturing Process
             </h3>
             <img
-              src={imageSteel[0]}
+              src={steelImg}
               alt="steel alloys"
               style={{ mixBlendMode: "multiply" }}
             />

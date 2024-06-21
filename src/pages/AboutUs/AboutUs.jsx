@@ -1,52 +1,42 @@
 import "./styles.css";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { imageAbout } from "../@assets/image";
+import { aboutUs1, aboutUs2, aboutUsLand, aboutUsPort } from "../../Assets";
 import {
   FaUserCog,
   FaBalanceScale,
   FaLightbulb,
   FaWrench,
   FaBolt,
-  FaRocket,
+  FaIndustry,
 } from "react-icons/fa";
 
-import { imageAboutslider } from "../@assets/image";
-import Carousel from "react-bootstrap/Carousel";
-
 export const AboutUs = () => {
-  const [width, setWidth] = useState(window.innerWidth < 800);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
 
   useEffect(() => {
     const handleResize = () => {
-      setWidth(window.innerWidth < 800);
+      setIsMobile(window.innerWidth < 800);
     };
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, []);
 
   return (
     <section className="aboutus-section">
       <div className="image-design">
         <img
-          src={imageAbout[!width ? 0 : 1]}
-          alt=""
-          style={{
-            height: "80vh",
-            width: "100%",
-            position: "relative",
-          }}
+          src={!isMobile ? aboutUsLand : aboutUsPort}
+          alt="About Us"
+          style={{ height: "80vh", width: "100%", position: "relative" }}
         />
         <div className="aboutus-image-header">
           <motion.h1
             initial={{ y: 0, opacity: 0 }}
             animate={{ y: 300, opacity: 1 }}
-            transition={{
-              duration: 5,
-              type: "spring",
-            }}
+            transition={{ duration: 5, type: "spring" }}
             className="aboutus-header-text Title"
           >
             About Us
@@ -55,7 +45,7 @@ export const AboutUs = () => {
       </div>
       <div className="aboutus-container">
         <div className="aboutus-header">
-          "Bringing quality alloy steel and aluminum to dealers nationwide.{" "}
+          "Bringing quality alloy steel and aluminum to dealers nationwide.
           <br />
           We specialize in providing top-notch materials for your business
           needs.
@@ -65,12 +55,7 @@ export const AboutUs = () => {
         <div className="aboutus-content innerWidth paddings">
           <div className="about-left">
             <div className="about-image">
-              <img
-                className="img-cont1"
-                src={imageAbout[2]}
-                alt=""
-                // width={"40%"}  height={"40%"}
-              />
+              <img className="img-cont1" src={aboutUs1} alt="Our Expertise" />
             </div>
           </div>
           <div className="about-right">
@@ -81,7 +66,7 @@ export const AboutUs = () => {
               <div className="about-right-content-text">
                 <strong>Expertise: </strong> Our team comprises seasoned
                 metallurgists and engineers with a wealth of knowledge in
-                stainless steel, copper, and nickel alloys. Their expertise
+                stainless steel, aluminum, and nickel alloys. Their expertise
                 enables us to create alloys that offer exceptional performance
                 and durability.
               </div>
@@ -102,7 +87,7 @@ export const AboutUs = () => {
                 <FaLightbulb />
               </div>
               <div className="about-right-content-text">
-                <strong>Innovation: </strong>Innovation is at the heart of our
+                <strong>Innovation: </strong> Innovation is at the heart of our
                 operations. We invest in research and development to stay at the
                 forefront of alloy technology, constantly improving our products
                 to meet evolving industry demands.
@@ -117,7 +102,7 @@ export const AboutUs = () => {
                 <FaWrench />
               </div>
               <div className="about-left-content-text">
-                <strong>Stainless Steel Alloys: </strong>We offer a wide range
+                <strong>Stainless Steel Alloys: </strong> We offer a wide range
                 of stainless steel alloys suitable for various applications,
                 including corrosion-resistant grades for harsh environments and
                 high-strength alloys for structural purposes.
@@ -128,7 +113,7 @@ export const AboutUs = () => {
                 <FaBolt />
               </div>
               <div className="about-left-content-text">
-                <strong>Nickel Alloys: </strong>Our nickel alloys excel in
+                <strong>Nickel Alloys: </strong> Our nickel alloys excel in
                 extreme environments, providing exceptional resistance to heat,
                 corrosion, and wear. They are used in aerospace, chemical
                 processing, and other demanding industries.
@@ -136,27 +121,23 @@ export const AboutUs = () => {
             </div>
             <div className="about-left-content">
               <div className="about-icons">
-                <FaRocket />
+                <FaIndustry />
               </div>
               <div className="about-left-content-text">
-                <strong>Copper Alloys: </strong>Our copper alloys are known for
-                their conductivity, corrosion resistance, and thermal
-                properties, making them ideal for electrical, plumbing, and
-                industrial applications.
+                <strong>Aluminum Alloys: </strong> Our aluminum alloys are known
+                for their lightweight, corrosion resistance, and versatility,
+                making them ideal for automotive, aerospace, and industrial
+                applications.
               </div>
             </div>
           </div>
           <div className="about-right">
             <div className="about-image">
-              <img
-                className="img-cont1"
-                src={imageAbout[3]}
-                alt=""
-                // width={"40%"}  height={"40%"}
-              />
+              <img className="img-cont1" src={aboutUs2} alt="Aluminum Alloys" />
             </div>
           </div>
         </div>
+        {/* Uncomment the below section if you want to include the carousel */}
         {/* <div className="aboutus-content padding">
             <Carousel interval={4000} pause={false}>
               {imageAboutslider.map((data, index) => (

@@ -1,7 +1,6 @@
 import "./styles.css";
 import React from "react";
-import { ContactLeft } from "../@components/Contact/ContactLeft/ContactLeft";
-import { ContactRight } from "../@components/Contact/ContactRight/ContactRight";
+import { ContactLeft, ContactRight } from "../../Components";
 
 export const ContactUs = () => {
   return (
