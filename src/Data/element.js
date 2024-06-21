@@ -1,5 +1,6 @@
 import { aluminum, copper, nickel, stainLessSteel, titanium } from "../Assets";
 
+
 export const elementsData = {
   aluminum: [
     {
@@ -8,18 +9,20 @@ export const elementsData = {
     },
     <>
       <p>
-        Aluminum alloy is a material made from a combination of aluminum and
-        other elements. It is known for its lightweight properties, corrosion
-        resistance, and strength, making it a popular choice in various
-        industries such as aerospace, automotive, and construction.
+        Aluminum alloy stands out as a material crafted from a blend of aluminum
+        and other elements, showcasing exceptional properties highly sought
+        after in numerous industries. Renowned for its lightweight nature,
+        corrosion resistance, and impressive strength, aluminum alloy emerges as
+        a favored choice across sectors like aerospace, automotive, and
+        construction..
       </p>
       <p>
-        Aluminum is another versatile element widely used in various industries,
-        especially in the manufacturing of alloys for pipes, tubes, and other
-        products. Aluminum alloys are lightweight, corrosion-resistant, and
-        exhibit good mechanical properties. They are often preferred for their
-        high strength-to-weight ratio, making them suitable for aerospace,
-        automotive, and construction applications.
+        Aluminum, a versatile element, plays a crucial role in various
+        industries, especially in alloy manufacturing for pipes, tubes, and
+        more. Aluminum alloys are known for being lightweight,
+        corrosion-resistant, and having excellent mechanical properties. Their
+        high strength-to-weight ratio makes them ideal for aerospace,
+        automotive, and construction applications
       </p>
     </>,
   ],
@@ -30,44 +33,59 @@ export const elementsData = {
     },
     <>
       <p>
-        Components to stabilize elements in room and normal temperatures play an
-        important role in various systems. Titanium is a metal that is available
-        in a distinct silver color. These elements possess superior strength and
-        are resistant to corrosion and oxidation in various environments. This
-        element is lighter than steel but has equal or better strength.
+        Ensuring stability at room and normal temperatures is paramount across
+        various systems, making titanium alloys indispensable. With its
+        distinctive silver appearance, titanium stands out as a crucial metal
+        for this purpose. Titanium alloys are renowned for their exceptional
+        strength and unparalleled resistance to corrosion and oxidation in
+        diverse environments. Noteworthy is titanium's lightweight nature
+        compared to steel, coupled with equal or superior strength, making it a
+        preferred choice across numerous applications.
       </p>
       <p>
-        Titanium Alloys possess superior mechanical properties and excellent
-        ductility. These alloys have a minimum tensile strength of 862Mpa and a
-        minimum yield strength of 241Mpa. They possess a hardness between 70-74
-        Rockwell. They are highly versatile and widely used in aerospace, power
-        generation, heat exchangers, oil and gas refining, automotive
-        industries, and so on. We are the leading Titanium Suppliers in the
-        country. We thrive to supply the best products at all our outlets which
-        are available at reasonable rates for all.
+        Titanium alloys are renowned for their superior mechanical properties
+        and exceptional ductility, making them a cornerstone in various
+        industries. With a minimum tensile strength of 862 MPa and a minimum
+        yield strength of 241 MPa, coupled with a hardness ranging between 70-74
+        Rockwell, these alloys offer unmatched performance. Widely used in
+        aerospace, power generation, heat exchangers, oil and gas refining,
+        automotive industries, and more, titanium alloys showcase their
+        versatility and reliability across diverse applications. As the leading
+        titanium suppliers in the country, we pride ourselves on delivering
+        top-notch products at competitive rates. Explore our outlets for access
+        to premium titanium alloys that meet your industry's demands seamlessly.
       </p>
     </>,
   ],
   stainLessSteel: [
     {
-      src: stainLessSteel,
+      src:   stainLessSteel,
       alt: "Stainless Steel",
     },
     <>
       <p>
-        Stainless steel belongs to ferrous alloys which, prevent iron from
-        rusting. The Stainless Steel Pipe is made of 11% chromium, 8% nickel,
-        and a few traces of molybdenum and nitrogen. This gives these pipes
-        excellent resistance against pitting and corrosion. These pipes can
-        suffice at temperatures of 800°F or above, depending on the grade of
-        stainless steel.
+        Stainless steel is a type of ferrous alloy renowned for its ability to
+        resist rust and corrosion. The composition of Stainless Steel Pipes
+        typically includes 11% chromium, 8% nickel, along with small amounts of
+        molybdenum and nitrogen. This unique blend confers exceptional
+        resistance to pitting and corrosion, making these pipes ideal for a wide
+        range of applications. They can withstand temperatures exceeding 800°F,
+        depending on the specific grade of stainless steel used. Whether for
+        industrial, commercial, or residential purposes, Stainless Steel Pipes
+        offer unmatched durability and longevity, making them a preferred choice
+        in various industries worldwide.
       </p>
       <p>
-        The Austenitic Stainless Steel Seamless Pipe is available with an outer
-        diameter of 6mm-711mm and wall thickness of 1mm-100mm. As the
-        temperature in these pipes increases the, working pressure decreases. We
-        are the leading Stainless steel pipe supplier in India. We strive to
-        produce the best products which are accessible to all at reasonable
+        As the leading supplier of Austenitic Stainless Steel Seamless Pipes in
+        India, <strong>Rise Alloys</strong> offers a comprehensive range of
+        sizes, with outer diameters spanning from 6mm to 711mm and wall
+        thicknesses from 1mm to 100mm. These pipes are engineered to withstand
+        varying temperatures while maintaining optimal working pressure levels.
+        Our commitment to quality ensures that our products meet industry
+        standards, providing reliability and durability across diverse
+        applications. Whether you're in need of precision-engineered components
+        or reliable distribution, <strong>Rise Alloys</strong> is your trusted
+        partner, delivering superior stainless steel solutions at competitive
         rates.
       </p>
     </>,

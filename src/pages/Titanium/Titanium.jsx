@@ -1,7 +1,7 @@
 import "./styles.css";
 import "./styles2.css";
 import React from "react";
-import { DropDown, ContainerMetal } from "../../Components";
+import { ContainerMetal,DropDown } from "../../Components";
 import { elementsData } from "../../Data/element";
 import {
   Titanium_Alloys_Chemical_Element,
@@ -25,25 +25,34 @@ export const Titanium = () => {
         <div className="titanium-extras">
           <div className="titanium-extras-divs">
             <p>
-              The Grade 5 Titanium is the most preferred titanium grade. This
-              grade equates to half the titanium worldwide. This sheet is used
-              in various systems as a barrier to resist heat transfer throughout
-              the entire assembly. The Titanium Grade 2 is the purest and
-              versatile grade of titanium available in the market. This grade
-              can be drawn in different shapes and possess superior dimensional
-              accuracy. All our products can be customized as per your needs in
-              different shapes and sizes.
+              Grade 5 Titanium is widely regarded as the top choice among
+              titanium grades, constituting half of the world's titanium
+              production. This grade is extensively utilized in diverse systems
+              as a heat transfer barrier across entire assemblies, ensuring
+              exceptional resistance. On the other hand, Titanium Grade 2 stands
+              out as the purest and most versatile titanium grade available in
+              the market. It boasts superior dimensional accuracy and can be
+              easily formed into various shapes, making it a highly sought-after
+              option. At<strong> Rise Alloys </strong> we offer a range of
+              customizable titanium products tailored to your specific needs,
+              available in different shapes and sizes. Explore our catalog to
+              discover how our premium titanium solutions can elevate your
+              projects.
             </p>
             <p>
-              The Titanium Steel has good formability and enhanced creep-rupture
-              properties. These products can be used in both high and
-              low-pressure systems. They also possess superior fatigue and crack
-              propagation. The Titanium Price Per Kg depends on the grade of
-              titanium, its size, chemical make-up, and the thickness of the
-              material of your choosing. Visit any of our outlets in the country
-              and get a quote on our products. Our experienced manufacture all
-              our products following all international and national standards.
-              To find out more about our products, contact us to know more.
+              Titanium Steel is renowned for its excellent formability and
+              enhanced creep-rupture properties, making it a versatile choice
+              for various applications. These products are suitable for use in
+              both high and low-pressure systems, offering superior fatigue
+              resistance and crack propagation capabilities. The Titanium Price
+              Per Kg is influenced by factors such as the grade of titanium,
+              size, chemical composition, and material thickness. Visit any of
+              our nationwide outlets to receive a personalized quote on our
+              high-quality titanium products. Our experienced manufacturing team
+              adheres to stringent international and national standards,
+              ensuring top-notch quality. Contact us today to learn more about
+              our comprehensive range of titanium solutions tailored to meet
+              your specific requirements.
             </p>
           </div>
           <div className="titanium-extras-divs">
