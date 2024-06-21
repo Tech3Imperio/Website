@@ -25,34 +25,31 @@ export const Aluminum = () => {
           <div className="aluminum-extras-divs">
             <h3 className="header">Aluminum Alloy Products</h3>
             <p>
-              Aluminum alloys can be classified into different series based on
-              their composition and properties. For instance, the 1000 series
-              primarily consists of pure aluminum, while the 6000 series
-              contains silicon and magnesium, offering good formability and
-              weldability. One of the popular alloys is Aluminum Alloy 6061,
-              known for its excellent machinability and structural strength. It
-              has a density of about 2.70 g/cm³, a tensile strength ranging from
-              124-290 MPa, and a yield strength of 55-240 MPa depending on the
-              temper.
+              Aluminum alloys are categorized into different series based on
+              their composition and properties, making them versatile for
+              various applications. The 1000 series primarily comprises pure
+              aluminum, known for its exceptional corrosion resistance and high
+              thermal conductivity. In contrast, the 6000 series, containing
+              silicon and magnesium, offers excellent formability and
+              weldability, ideal for structural components.
             </p>
             <p>
-              Aluminum alloys can be classified into different series based on
-              their composition and properties. For instance, the 1000 series
-              primarily consists of pure aluminum, while the 6000 series
-              contains silicon and magnesium, offering good formability and
-              weldability. One of the popular alloys is Aluminum Alloy 6061,
-              known for its excellent machinability and structural strength. It
-              has a density of about 2.70 g/cm³, a tensile strength ranging from
-              124-290 MPa, and a yield strength of 55-240 MPa depending on the
-              temper.s
+              A prominent example in the 6000 series is Aluminum Alloy 6061.
+              Renowned for its superb machinability and robust structural
+              strength, Aluminum Alloy 6061 is a preferred choice in many
+              industries. It has a density of approximately 2.70 g/cm³, a
+              tensile strength ranging from 124-290 MPa, and a yield strength
+              between 55-240 MPa, varying with the temper. This alloy's balanced
+              combination of properties makes it suitable for applications
+              requiring durability and precision.
             </p>
             <p>
-              In terms of pricing, the cost of aluminum per pound fluctuates
-              based on market demand, supply chain dynamics, and global economic
-              conditions. As of now, the price range for Aluminum Alloys in
-              India varies from Rs 150 to Rs 200 per kilogram, but it's
-              advisable to check current market rates for accurate pricing
-              information.
+              The pricing of aluminum per pound is subject to fluctuations
+              driven by market demand, supply chain intricacies, and global
+              economic trends. Presently, in India, the price range for Aluminum
+              Alloys spans from Rs 150 to Rs 200 per kilogram. However, for
+              precise and up-to-date pricing information, it's recommended to
+              regularly check the current market rates.
             </p>
           </div>
           <div className="aluminum-extras-divs">
