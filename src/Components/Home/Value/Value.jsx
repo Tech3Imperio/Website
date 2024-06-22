@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { FaRegEnvelope } from "react-icons/fa";
 import { HiOutlineBadgeCheck } from "react-icons/hi";
 import { MdOutlineFactory } from "react-icons/md";
-import { IoDiamondOutline } from "react-icons/io5";
 import { LuShoppingCart } from "react-icons/lu";
 import { value } from "../../../Assets";
 
@@ -21,12 +20,6 @@ export const Value = () => {
       header: "Get in Touch",
       content:
         "Ready for top-tier alloys? Contact us to explore stainless steel, copper, and nickel alloy products. Let's exceed your expectations with our unmatched quality and tailored solutions.",
-    },
-    {
-      icons: <IoDiamondOutline />,
-      header: "Premium Materials",
-      content:
-        "Our alloys are crafted from the finest materials, ensuring durability and performance. Choose Rise Alloys for products that stand the test of time and deliver exceptional results.",
     },
     {
       icons: <HiOutlineBadgeCheck />,

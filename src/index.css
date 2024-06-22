@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans";
+  font-weight: 600;
   scroll-behavior: smooth !important;
 }
 
