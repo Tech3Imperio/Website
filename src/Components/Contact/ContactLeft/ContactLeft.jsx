@@ -51,7 +51,7 @@ export const ContactLeft = () => {
               <div>
                 <FaLocationDot />
               </div>
-              <div>New Queens Road, Mumbai, Mum - 400004</div>
+              <div>New Queens Road, Mumbai - 400004</div>
             </div>
           </div>
         </div>

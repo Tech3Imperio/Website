@@ -11,7 +11,6 @@ export const ContactRight = () => {
     query: "",
   });
   const [rows, setRows] = useState(1);
-  const [formStatus, setFormStatus] = useState("");
   const formRef = useRef(null);
   const iframeRef = useRef(null);
 
@@ -20,18 +19,22 @@ export const ContactRight = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
 
     if (name === "query") {
-      let matches = value.match(new RegExp("\n", "gi"));
+      const match = "\n";
+      let matches = value.match(new RegExp(match, "gi"));
       setRows(matches ? matches.length + 1 : 1);
     }
   };
 
+  const handleNumberInput = (e) => {
+    const value = e.target.value.replace(/\D/g, "");
+    setFormData((prevData) => ({ ...prevData, number: value }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormStatus("Submitting...");
 
     formRef.current.submit();
     iframeRef.current.onload = () => {
-      setFormStatus("Query submitted successfully!");
       setFormData({
         company: "",
         name: "",
@@ -77,22 +80,35 @@ export const ContactRight = () => {
             ))}
           </div>
           <div className="right-contact-details">
-            {["email", "number"].map((field) => (
-              <div key={field} className="right-contact-detail">
-                <input
-                  type={field === "email" ? "email" : "tel"}
-                  className="forminputs"
-                  id={field}
-                  name={field}
-                  value={formData[field]}
-                  onChange={handleChange}
-                  required
-                />
-                <label className="input-label" htmlFor={field}>
-                  {field.charAt(0).toUpperCase() + field.slice(1)}
-                </label>
-              </div>
-            ))}
+            <div className="right-contact-detail">
+              <input
+                type="email"
+                className="forminputs"
+                id="email"
+                name="email"
+                value={formData["email"]}
+                onChange={handleChange}
+                required
+              />
+              <label className="input-label" htmlFor={"email"}>
+                {"email".charAt(0).toUpperCase() + "email".slice(1)}
+              </label>
+            </div>
+            <div className="right-contact-detail">
+              <input
+                type="tel"
+                className="forminputs"
+                id="number"
+                name="number"
+                value={formData["number"]}
+                onChange={handleNumberInput}
+                pattern="\d*"
+                required
+              />
+              <label className="input-label" htmlFor={"number"}>
+                {"number".charAt(0).toUpperCase() + "number".slice(1)}
+              </label>
+            </div>
           </div>
           <div className="right-contact-details">
             <div className="right-contact-detail">
@@ -124,7 +140,10 @@ export const ContactRight = () => {
         ref={iframeRef}
         name="hidden_iframe"
         style={{ display: "none" }}
-      ></iframe>
+        title="Temp Frame"
+      >
+        {false ? "" : ""}
+      </iframe>
     </form>
   );
 };
