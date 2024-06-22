@@ -1,10 +1,6 @@
 .contact-right {
-  min-width: 55%;
-  height: 680px;
-  padding: 0% 8% 0% 0%;
-  margin-bottom: 25px;
+  width: 950px;
   color: var(--secondary);
-  /* border: 2px solid black; */
 }
 
 .contact-right-container {

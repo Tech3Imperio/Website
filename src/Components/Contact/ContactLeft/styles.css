@@ -1,9 +1,7 @@
 .contact-left {
-  min-width: 40%;
-  height: 680px;
-  padding: 0% 0% 0% 10%;
-  margin-bottom: 25px;
+  width: 575px;
   color: var(--primary);
+  height: 680px;
 }
 
 .contact-left-container {
@@ -19,6 +17,18 @@
 
 .left-header {
   color: var(--primary);
+  position: relative;
+  width: fit-content;
+}
+
+.left-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
 }
 
 .left-header-text {

@@ -21,9 +21,6 @@ export const ContactLeft = () => {
         </div>
         <div className="left-header-container">
           <h1 className="left-header PrimaryText">Contact Information</h1>
-          <div className="left-header-text">
-            Say something to start a live chat!
-          </div>
         </div>
         <div className="left-contact-container">
           <div className="left-contact-details">
