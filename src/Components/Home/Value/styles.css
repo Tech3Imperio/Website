@@ -72,7 +72,8 @@
     align-items: center;
     gap: 50px;
   }
-  .v-right {
+  .v-right,
+  .v-left {
     width: 90%;
   }
 }
@@ -83,7 +84,8 @@
 }
 
 @media (max-width: 480px) {
-  .v-right {
+  .v-right,
+  .v-left {
     width: 100%;
   }
   .value-image {

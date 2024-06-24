@@ -66,7 +66,7 @@ export const Value = () => {
         </div>
         <div className="v-left">
           <div className="value-image">
-            <img src={value} alt="value image" />
+            <img src={value} alt="value" />
           </div>
         </div>
       </div>

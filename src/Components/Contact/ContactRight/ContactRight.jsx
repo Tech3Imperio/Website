@@ -1,6 +1,7 @@
 import { contact } from "../../../Assets";
 import "./styles.css";
 import React, { useState, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const ContactRight = () => {
   const [formData, setFormData] = useState({
@@ -12,7 +13,18 @@ export const ContactRight = () => {
   });
   const [rows, setRows] = useState(1);
   const formRef = useRef(null);
+  const [human, setHuman] = useState(false);
   const iframeRef = useRef(null);
+
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const validateNumber = (number) => {
+    const re = /^\d{10}$/;
+    return re.test(String(number));
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,20 +42,44 @@ export const ContactRight = () => {
     setFormData((prevData) => ({ ...prevData, number: value }));
   };
 
+  const validateForm = () => {
+    let formErrors = {};
+    if (!formData.company) formErrors.company = "Company is required.";
+    if (!formData.name) formErrors.name = "Name is required.";
+    if (!formData.email) {
+      formErrors.email = "Email is required.";
+    } else if (!validateEmail(formData.email)) {
+      formErrors.email = "Invalid email format.";
+    }
+    if (!formData.number) {
+      formErrors.number = "Number is required.";
+    } else if (!validateNumber(formData.number)) {
+      formErrors.number = "Invalid number format. Should be 10 digits.";
+    }
+    if (!formData.query) formErrors.query = "Query is required.";
+    if (!human) formErrors.human = "Please verify you are human.";
+
+    return Object.keys(formErrors).length === 0;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    formRef.current.submit();
-    iframeRef.current.onload = () => {
-      setFormData({
-        company: "",
-        name: "",
-        email: "",
-        number: "",
-        query: "",
-      });
-      setRows(1);
-    };
+    if (validateForm()) {
+      formRef.current.submit();
+      iframeRef.current.onload = () => {
+        setFormData({
+          company: "",
+          name: "",
+          email: "",
+          number: "",
+          query: "",
+        });
+        setHuman(false);
+        setRows(1);
+      };
+    } else {
+      alert("Please fix the errors in the form.");
+    }
   };
 
   return (
@@ -71,6 +107,7 @@ export const ContactRight = () => {
                   name={field}
                   value={formData[field]}
                   onChange={handleChange}
+                  aria-label={field}
                   required
                 />
                 <label className="input-label" htmlFor={field}>
@@ -86,12 +123,13 @@ export const ContactRight = () => {
                 className="forminputs"
                 id="email"
                 name="email"
-                value={formData["email"]}
+                value={formData.email}
                 onChange={handleChange}
+                aria-label="email"
                 required
               />
-              <label className="input-label" htmlFor={"email"}>
-                {"email".charAt(0).toUpperCase() + "email".slice(1)}
+              <label className="input-label" htmlFor="email">
+                Email
               </label>
             </div>
             <div className="right-contact-detail">
@@ -100,13 +138,14 @@ export const ContactRight = () => {
                 className="forminputs"
                 id="number"
                 name="number"
-                value={formData["number"]}
+                value={formData.number}
                 onChange={handleNumberInput}
+                aria-label="number"
                 pattern="\d*"
                 required
               />
-              <label className="input-label" htmlFor={"number"}>
-                {"number".charAt(0).toUpperCase() + "number".slice(1)}
+              <label className="input-label" htmlFor="number">
+                Number
               </label>
             </div>
           </div>
@@ -120,19 +159,34 @@ export const ContactRight = () => {
                 onChange={handleChange}
                 placeholder="Write your inquiry..."
                 rows={rows}
+                aria-label="query"
                 required
               />
             </div>
           </div>
         </div>
-        <div className="right-contact-footer">
-          <div className="right-footer">
-            <button type="submit" className="button footerbutton">
-              Submit Query
-            </button>
+        <div className="right-footer">
+          <div className="right-captcha-details">
+            <div className="right-captcha-detail">
+              <ReCAPTCHA
+                sitekey="6LelCAAqAAAAAGUF65rE9pM45OBRdFJPHSotZxEz"
+                onChange={() => setHuman(true)}
+              />
+            </div>
           </div>
-          <div className="right-image">
-            <img src={contact} alt="arrows" />
+          <div className="right-contact-footer">
+            <div className="right-contact">
+              <button
+                type="submit"
+                className="button footerbutton"
+                disabled={!human}
+              >
+                Submit Query
+              </button>
+            </div>
+            <div className="right-image">
+              <img src={contact} alt="Contact illustration" />
+            </div>
           </div>
         </div>
       </div>

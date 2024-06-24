@@ -24,7 +24,7 @@ export const Footer = () => {
         <img src={logoWhiteW} className="footer-logo" alt="Logo" />
 
         <p>
-          <Link to={`https://goo.gl/maps/WS9LBcQF6RsXW9mHA`} target="_blank">
+          <Link to="https://goo.gl/maps/WS9LBcQF6RsXW9mHA" target="_blank">
             New Queens Road, Mumbai - 400004
           </Link>
         </p>
@@ -34,14 +34,14 @@ export const Footer = () => {
           <h5 className="Raleway">Contact Us</h5>
           <div className="contacts-content">
             <p>
-              <strong className="Raleway">Phone Number:</strong> +91 93725 93981
+              <span className="Raleway">Phone Number:</span> +91 93725 93981
             </p>
             <p>
-              <strong className="Raleway">Email: </strong>
+              <span className="Raleway">Email: </span>
               info@risealloys.com
             </p>
             <p>
-              <strong className="Raleway">Website: </strong>
+              <span className="Raleway">Website: </span>
               www.risealloys.com
             </p>
           </div>
@@ -73,7 +73,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer-content">
-        <div className="emails">
+        <form className="emails">
           <input
             type="email"
             className="email-input Raleway"
@@ -94,7 +94,7 @@ export const Footer = () => {
           >
             Submited
           </div>
-        </div>
+        </form>
         <div className="copyright Raleway ">
           <p>&copy; 2024 Rise Alloys </p>
         </div>

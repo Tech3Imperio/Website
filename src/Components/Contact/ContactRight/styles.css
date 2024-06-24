@@ -103,7 +103,23 @@
   border-bottom: 2px solid #000;
 }
 
-.right-contact-footer > .right-footer {
+.right-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-captcha-details {
+  width: fit-content;
+  margin: 0px 50px 0px 25px;
+}
+
+.right-contact-footer {
+  width: fit-content;
+  float: right;
+}
+
+.right-contact-footer > .right-contact {
   float: right;
   margin-top: 70px;
   margin-right: 20px;
@@ -150,6 +166,10 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+  }
+  .right-footer {
+    padding-top: 40px;
+    flex-direction: column;
   }
 
   .right-contact-detail {

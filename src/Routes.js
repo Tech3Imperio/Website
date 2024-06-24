@@ -39,19 +39,27 @@ export const Routes = () => {
     };
 
     const scrolls = () => {
-      const condition =
-        window.innerWidth < 500 &&
-        (window.location.pathname.indexOf("/stainless-steel") !== -1 ||
-          window.location.pathname.indexOf("/aluminium-alloy") !== -1 ||
-          window.location.pathname.indexOf("/titanium-alloy") !== -1 ||
-          window.location.pathname.indexOf("/nickel-alloy") !== -1 ||
-          window.location.pathname.indexOf("/copper-alloy") !== -1);
+      const path = window.location.pathname;
+      const isMobile = window.innerWidth < 500;
 
-      if (condition) {
-        window.scrollTo(0, 830);
-      } else {
-        window.scrollTo(0, 0);
+      const scrollPositions = {
+        "/aluminium-alloy": 770,
+        "/stainless-steel": 770,
+        "/nickel-alloy": 770,
+        "/titanium-alloy": 675,
+        "/copper-alloy": 680,
+      };
+
+      if (isMobile) {
+        for (const [key, value] of Object.entries(scrollPositions)) {
+          if (path.includes(key)) {
+            window.scrollTo(0, value);
+            return;
+          }
+        }
       }
+
+      window.scrollTo(0, 0);
     };
 
     window.addEventListener("scroll", handleChange);
