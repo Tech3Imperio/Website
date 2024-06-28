@@ -26,7 +26,7 @@ export const Footer = () => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxk-MsPt5mNcIrdLj-yP3NcYkGnUyh7y2AaZapyUpOwdFRFcsDqkA9l8UJBWEIyQE8w/exec",
+        "https://script.google.com/macros/s/AKfycbxdQajQvHcLH4a5s7o3Y9Pia9dpGUqhDFPxcYFgEm1Ih66ZQA0wjGG_qLbSoSH7riUr/exec",
         {
           method: "POST",
           headers: {
@@ -42,8 +42,13 @@ export const Footer = () => {
       setResponseMessage(responseText);
       object1.style.display = "block";
       object2.style.display = "none";
+
       setEmail("");
-      alert("Thank you, your email has been submitted");
+      if (responseText === "Success") {
+        alert("Thank you, your email has been submitted");
+      } else if (responseText === "Email already exists") {
+        alert("This email already exists. Please contact us.");
+      }
 
       setTimeout(() => {}, 2000);
     } catch (error) {
