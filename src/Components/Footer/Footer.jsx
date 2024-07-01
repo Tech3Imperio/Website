@@ -11,14 +11,6 @@ import { logoWhiteW } from "../../Assets";
 
 export const Footer = () => {
   const [email, setEmail] = useState("");
-  const [responseMessage, setResponseMessage] = useState("");
-  //   const handleSubmit = (e) => {
-  //     e.preventDefault();
-  //     const object1 = document.getElementById("submited");
-  //     const object2 = document.getElementById("button");
-  //     object1.style.display = "block";
-  //     object2.style.display = "none";
-  //   };
   const handleSubmit = async (e) => {
     e.preventDefault();
     const object1 = document.getElementById("submited");
@@ -39,7 +31,6 @@ export const Footer = () => {
         throw new Error("Network response was not ok");
       }
       const responseText = await response.text();
-      setResponseMessage(responseText);
       object1.style.display = "block";
       object2.style.display = "none";
 
@@ -49,11 +40,8 @@ export const Footer = () => {
       } else if (responseText === "Email already exists") {
         alert("This email already exists. Please contact us.");
       }
-
-      setTimeout(() => {}, 2000);
     } catch (error) {
       console.error("Fetch error:", error);
-      setResponseMessage("Error: " + error.message);
     }
   };
 

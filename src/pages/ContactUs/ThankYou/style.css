@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
 .thankyou_main_content {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 5%;
   padding: 0 10px;
@@ -16,9 +18,8 @@
 }
 
 .thanks-msg {
-  font-size: 100px;
-  font-weight: 400;
-  margin-bottom: 10px;
+  font-size: 125px;
+  font-weight: 800;
   font-family: "Berkshire Swash";
   text-align: center;
 }
@@ -28,17 +29,27 @@
   text-align: center;
 }
 
-.short-msg > strong {
+.short-msg > span {
+  font-weight: 600;
   color: #004aad;
 }
 
 .home-btn {
-  border-radius: 50px;
-  height: 4vh;
-  width: 150px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  background-color: #004aad;
+  border: 2px solid white;
   font-size: large;
   margin: 20px;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-btn:hover {
+  border-color: #004aad;
+  color: #004aad;
+  background-color: white;
 }
 
 .issue-msg {
@@ -48,9 +59,7 @@
 }
 
 .issue-msg > a {
-  text-decoration: none;
-  color: #004aad;
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

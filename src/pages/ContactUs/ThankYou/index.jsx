@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 export const ThankYou = () => {
   return (
@@ -13,9 +14,6 @@ export const ThankYou = () => {
             viewBox="0 0 24 24"
             id="Send-Email-Envelope--Streamline-Ultimate"
           >
-            <desc>
-              {"Send Email Envelope Streamline Icon: https://streamlinehq.com"}
-            </desc>
             <path
               fill="#e3e3e3"
               d="M21.4 17.2a1 1 0 0 1 -0.979 0.8H5.96a1 1 0 0 1 -0.979 -1.2l2.083 -10a1 1 0 0 1 0.979 -0.8H22.5a1 1 0 0 1 0.979 1.2l-2.079 10Z"
@@ -66,19 +64,16 @@ export const ThankYou = () => {
         <div className="thanks-msg">Thank You !</div>
         <div>
           <p className="short-msg">
-            Thank you for visiting <strong>RISE ALLOYS</strong> website. You
-            will receive an email message shortly.
+            Thank you for visiting <span>Rise Alloys</span> website. <br />
+            You will receive an email message shortly.
           </p>
         </div>
-        <Link to="/home">
-          <button className="home-btn">⬅ Back Home</button>
+        <Link to="/home" className="home-btn">
+          <FaArrowLeft /> Back Home
         </Link>
         <div>
           <p className="issue-msg">
-            If you have any issue{" "}
-            <Link to="/contact">
-              <strong>CONTACT US.</strong>
-            </Link>
+            If you have any issue <Link to="/contact">Contact Us</Link>
           </p>
         </div>
       </div>

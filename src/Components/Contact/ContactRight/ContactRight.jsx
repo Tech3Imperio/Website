@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { contact } from "../../../Assets";
 import "./styles.css";
 import React, { useState, useRef } from "react";
@@ -15,6 +16,7 @@ export const ContactRight = () => {
   const formRef = useRef(null);
   const [human, setHuman] = useState(false);
   const iframeRef = useRef(null);
+  const navigate = useNavigate();
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -59,13 +61,15 @@ export const ContactRight = () => {
     if (!formData.query) formErrors.query = "Query is required.";
     if (!human) formErrors.human = "Please verify you are human.";
 
-    return Object.keys(formErrors).length === 0;
+    return [Object.keys(formErrors).length === 0, formErrors];
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
+    const formErrors = validateForm();
+    if (formErrors[0]) {
       formRef.current.submit();
+      navigate("thanks");
       iframeRef.current.onload = () => {
         setFormData({
           company: "",
@@ -78,7 +82,7 @@ export const ContactRight = () => {
         setRows(1);
       };
     } else {
-      alert("Please fix the errors in the form.");
+      alert(formErrors[1][Object.keys(formErrors[1])[0]]);
     }
   };
 
