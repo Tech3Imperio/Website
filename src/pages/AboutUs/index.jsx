@@ -1,7 +1,7 @@
 import "./styles.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { aboutUs1, aboutUs2, aboutUsLand, aboutUsPort } from "../../Assets";
+import { aboutUs1, aboutUs2, aboutUsLand, aboutUsPort } from "../../assets";
 import {
   FaUserCog,
   FaBalanceScale,
@@ -12,26 +12,18 @@ import {
 } from "react-icons/fa";
 
 export const AboutUs = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 800);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <section className="aboutus-section">
       <div className="image-design">
-        <img
-          src={!isMobile ? aboutUsLand : aboutUsPort}
-          alt="About Us"
-          style={{ height: "80vh", width: "100%", position: "relative" }}
-        />
+        <picture>
+          <source media="(min-width: 800px)" srcset={aboutUsLand} />
+          <img
+            src={aboutUsPort}
+            alt="About Us"
+            loading="lazy"
+            style={{ height: "80vh", width: "100%", position: "relative" }}
+          />
+        </picture>
         <div className="aboutus-image-header">
           <motion.h1
             initial={{ y: 0, opacity: 0 }}
@@ -55,7 +47,12 @@ export const AboutUs = () => {
         <div className="aboutus-content innerWidth paddings">
           <div className="about-left">
             <div className="about-image">
-              <img className="img-cont1" src={aboutUs1} alt="Our Expertise" />
+              <img
+                className="img-cont1"
+                src={aboutUs1}
+                alt="Our Expertise"
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="about-right">
@@ -135,7 +132,12 @@ export const AboutUs = () => {
           </div>
           <div className="about-right">
             <div className="about-image">
-              <img className="img-cont1" src={aboutUs2} alt="Aluminum Alloys" />
+              <img
+                className="img-cont1"
+                src={aboutUs2}
+                alt="Aluminum Alloys"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

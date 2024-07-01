@@ -1,8 +1,8 @@
 import "./styles.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { variation, otherProduct, elementsData } from "../../Data";
-import { DropDown, ContainerMetal } from "../../Components";
+import { variation, otherProduct, elementsData } from "../../data";
+import { DropDown, ContainerMetal } from "../../components";
 
 export const Nickel = () => {
   const navigate = useNavigate();
@@ -86,7 +86,11 @@ export const Nickel = () => {
                           className={data["id"]}
                           onClick={() => navigate(data["link"])}
                         >
-                          <img src={data["img"]} alt={data["text"]} />
+                          <img
+                            src={data["img"]}
+                            alt={data["text"]}
+                            loading="lazy"
+                          />
                           <h3 className={data["id"] + "-text"}>
                             {data["text"]}
                           </h3>
@@ -114,7 +118,11 @@ export const Nickel = () => {
                           className={data["id"]}
                           onClick={() => navigate(data["link"])}
                         >
-                          <img src={data["img"]} alt={data["text"]} />
+                          <img
+                            src={data["img"]}
+                            alt={data["text"]}
+                            loading="lazy"
+                          />
                           <h3 className={data["id"] + "-text"}>
                             {data["text"]}
                           </h3>

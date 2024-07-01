@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { contact } from "../../../Assets";
+import { contact } from "../../../assets";
 import "./styles.css";
 import React, { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -189,7 +189,7 @@ export const ContactRight = () => {
               </button>
             </div>
             <div className="right-image">
-              <img src={contact} alt="Contact illustration" />
+              <img src={contact} alt="Contact illustration" loading="lazy" />
             </div>
           </div>
         </div>

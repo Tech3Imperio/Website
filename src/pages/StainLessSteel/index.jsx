@@ -1,6 +1,6 @@
 import "./styles.css";
 import React from "react";
-import { DropDown, ContainerMetal } from "../../Components";
+import { DropDown, ContainerMetal } from "../../components";
 import {
   materialData1,
   materialData2,
@@ -8,9 +8,10 @@ import {
   materialData4,
   materialData5,
   materialData6,
-  materialData7,elementsData
-} from "../../Data";
-import { steelImg } from "../../Assets";
+  materialData7,
+  elementsData,
+} from "../../data";
+import { steelImg } from "../../assets";
 
 export const StainLessSteel = () => {
   return (
@@ -1498,6 +1499,7 @@ export const StainLessSteel = () => {
               src={steelImg}
               alt="steel alloys"
               style={{ mixBlendMode: "multiply" }}
+              loading="lazy"
             />
           </div>
           <div className="extras-divs">

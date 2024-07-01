@@ -1,13 +1,13 @@
 import "./styles.css";
 import "./styles2.css";
 import React from "react";
-import { DropDown, ContainerMetal } from "../../Components";
+import { DropDown, ContainerMetal } from "../../components";
 import {
   aluminumMechProperties,
   aluminumChemProperties,
   aluminumMeltingPoint,
   elementsData,
-} from "../../Data";
+} from "../../data";
 
 export const Aluminum = () => {
   return (

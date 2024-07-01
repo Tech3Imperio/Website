@@ -1,6 +1,6 @@
 import "./styles.css";
 import React from "react";
-import { logoWhiteH } from "../../Assets";
+import { logoWhiteH } from "../../assets";
 import { Link } from "react-router-dom";
 import {
   FaFacebook as Facebook,

@@ -1,7 +1,7 @@
 import "./styles.css";
 import React from "react";
-import { Carousels, AboutUs, ProductSlider, Value } from "../../Components";
-import { carousals } from "../../Data";
+import { Carousels, AboutUs, ProductSlider, Value } from "../../components";
+import { carousals } from "../../data";
 
 export const Home = () => {
   //

@@ -1,13 +1,13 @@
 import "./styles.css";
 import React from "react";
-import { DropDown, ContainerMetal } from "../../Components";
+import { DropDown, ContainerMetal } from "../../components";
 import {
   Titanium_Alloys_Chemical_Element,
   Titanium_Alloys_Melting_point,
   Titanium_Standards,
   Titanium_Steel_Mechanical_Properties,
   elementsData,
-} from "../../Data";
+} from "../../data";
 
 export const Titanium = () => {
   return (

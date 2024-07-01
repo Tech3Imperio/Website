@@ -19,7 +19,12 @@ export const ContainerMetal = (props) => {
       <h1 className="container-header">{header}</h1>
       <div className="content">
         <div className="image-container">
-          <img className="content-img" src={image.src} alt={image.altText} />
+          <img
+            className="content-img"
+            src={image.src}
+            alt={image.altText}
+            loading="lazy"
+          />
           <div className="content-text">
             <h3 className="content-text-header Raleway">
               {header.toUpperCase()}

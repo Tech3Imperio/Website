@@ -9,7 +9,7 @@ import {
   roundBar201,
   tube200,
   tube201,
-} from "../Assets";
+} from "../assets";
 
 export const variation = [
   [

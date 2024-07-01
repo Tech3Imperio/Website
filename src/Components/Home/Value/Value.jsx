@@ -5,7 +5,7 @@ import { FaRegEnvelope } from "react-icons/fa";
 import { HiOutlineBadgeCheck } from "react-icons/hi";
 import { MdOutlineFactory } from "react-icons/md";
 import { LuShoppingCart } from "react-icons/lu";
-import { value } from "../../../Assets";
+import { value } from "../../../assets";
 
 export const Value = () => {
   var valueDatas = [

@@ -1,7 +1,7 @@
 import "./styles.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import { homeSliderH1 } from "../../../Assets";
+import { homeSliderH1 } from "../../../assets";
 
 export const AboutUs = () => {
   return (

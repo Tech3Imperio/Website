@@ -1,4 +1,4 @@
-import { aluminum, copper, nickel, stainLessSteel, titanium } from "../Assets";
+import { aluminum, copper, nickel, stainLessSteel, titanium } from "../assets";
 
 export const sliderSettings = {
   slidesPerView: 1,

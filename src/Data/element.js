@@ -1,5 +1,4 @@
-import { aluminum, copper, nickel, stainLessSteel, titanium } from "../Assets";
-
+import { aluminum, copper, nickel, stainLessSteel, titanium } from "../assets";
 
 export const elementsData = {
   aluminum: [
@@ -59,7 +58,7 @@ export const elementsData = {
   ],
   stainLessSteel: [
     {
-      src:   stainLessSteel,
+      src: stainLessSteel,
       alt: "Stainless Steel",
     },
     <>

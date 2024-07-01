@@ -1,4 +1,4 @@
-import { NavBar, Footer } from "./Components";
+import { NavBar, Footer } from "./components";
 import { Outlet } from "react-router-dom";
 
 function App({ navBackground }) {

@@ -224,7 +224,7 @@ export const DropDown = ({ position }) => {
   //     );
   //   };
   const rendering = (position) => {
-    const dropdownComponents = [
+    const dropdowncomponents = [
       DropAluminum,
       DropTitanium,
       DropStainless,
@@ -234,16 +234,16 @@ export const DropDown = ({ position }) => {
     ];
     return (
       <>
-        {dropdownComponents.map((DropdownComponent, index) => {
+        {dropdowncomponents.map((Dropdowncomponent, index) => {
           if (index === position) {
-            return <DropdownComponent key={index} index={index} />;
+            return <Dropdowncomponent key={index} index={index} />;
           } else {
             return null;
           }
         })}
-        {dropdownComponents.map((DropdownComponent, index) => {
+        {dropdowncomponents.map((Dropdowncomponent, index) => {
           if (index !== position) {
-            return <DropdownComponent key={index} index={index} />;
+            return <Dropdowncomponent key={index} index={index} />;
           } else {
             return null;
           }

@@ -7,7 +7,7 @@ import {
   FaInstagram as Instagram,
   FaLinkedinIn as Linkedin,
 } from "react-icons/fa6";
-import { logoWhiteW } from "../../Assets";
+import { logoWhiteW } from "../../assets";
 
 export const Footer = () => {
   const [email, setEmail] = useState("");
@@ -48,7 +48,12 @@ export const Footer = () => {
   return (
     <footer className="footer-section ">
       <div className="footer-content ">
-        <img src={logoWhiteW} className="footer-logo" alt="Logo" />
+        <img
+          src={logoWhiteW}
+          className="footer-logo"
+          alt="Logo"
+          loading="lazy"
+        />
 
         <p>
           <Link to="https://goo.gl/maps/WS9LBcQF6RsXW9mHA" target="_blank">

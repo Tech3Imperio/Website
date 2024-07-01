@@ -1,6 +1,6 @@
 import "./styles.css";
 import React from "react";
-import { ContactLeft, ContactRight } from "../../Components";
+import { ContactLeft, ContactRight } from "../../components";
 import { motion } from "framer-motion";
 
 const animationVariants = {

@@ -17,7 +17,7 @@ import {
   StainLessSteel,
   ThankYou,
   Titanium,
-} from "./Pages";
+} from "./pages";
 
 export const Routes = () => {
   const [navBackground, setNavBackground] = useState(

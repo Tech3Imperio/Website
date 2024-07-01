@@ -1,10 +1,10 @@
-import homeSliderL1 from "./slider1.png";
-import homeSliderL2 from "./slider2.png";
-import homeSliderL3 from "./slider3.png";
-import homeSliderL4 from "./slider4.png";
-import homeSliderL5 from "./slider5.png";
-import homeSliderL6 from "./slider6.png";
-import homeSliderL7 from "./slider7.png";
+import homeSliderL1 from "./slider1.webp";
+import homeSliderL2 from "./slider2.webp";
+import homeSliderL3 from "./slider3.webp";
+import homeSliderL4 from "./slider4.webp";
+import homeSliderL5 from "./slider5.webp";
+import homeSliderL6 from "./slider6.webp";
+import homeSliderL7 from "./slider7.webp";
 
 export {
   homeSliderL1,
