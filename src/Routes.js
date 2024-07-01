@@ -15,6 +15,7 @@ import {
   Nickel,
   NotFound,
   StainLessSteel,
+  ThankYou,
   Titanium,
 } from "./Pages";
 
@@ -100,6 +101,7 @@ export const Routes = () => {
           <Route path="stainless-steel" element={<StainLessSteel />} />
           <Route path="copper-alloy" element={<Copper />} />
           <Route path="contact" element={<ContactUs />} />
+          <Route path="contact/thanks" element={<ThankYou />} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="*" element={<NotFound />} />
         </Route>

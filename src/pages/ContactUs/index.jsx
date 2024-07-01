@@ -45,3 +45,4 @@ export const ContactUs = () => {
     </section>
   );
 };
+export * from "./ThankYou";

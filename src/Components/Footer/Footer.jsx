@@ -1,5 +1,5 @@
 import "./styles.css";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   FaFacebookF as Facebook,
@@ -10,12 +10,51 @@ import {
 import { logoWhiteW } from "../../Assets";
 
 export const Footer = () => {
-  const handleSubmit = (e) => {
+  const [email, setEmail] = useState("");
+  const [responseMessage, setResponseMessage] = useState("");
+  //   const handleSubmit = (e) => {
+  //     e.preventDefault();
+  //     const object1 = document.getElementById("submited");
+  //     const object2 = document.getElementById("button");
+  //     object1.style.display = "block";
+  //     object2.style.display = "none";
+  //   };
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const object1 = document.getElementById("submited");
     const object2 = document.getElementById("button");
-    object1.style.display = "block";
-    object2.style.display = "none";
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbxdQajQvHcLH4a5s7o3Y9Pia9dpGUqhDFPxcYFgEm1Ih66ZQA0wjGG_qLbSoSH7riUr/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: "email=" + encodeURIComponent(email),
+        }
+      );
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const responseText = await response.text();
+      setResponseMessage(responseText);
+      object1.style.display = "block";
+      object2.style.display = "none";
+
+      setEmail("");
+      if (responseText === "Success") {
+        alert("Thank you, your email has been submitted");
+      } else if (responseText === "Email already exists") {
+        alert("This email already exists. Please contact us.");
+      }
+
+      setTimeout(() => {}, 2000);
+    } catch (error) {
+      console.error("Fetch error:", error);
+      setResponseMessage("Error: " + error.message);
+    }
   };
 
   return (
@@ -73,26 +112,25 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer-content">
-        <form className="emails">
+        <form className="emails" onSubmit={handleSubmit}>
           <input
             type="email"
+            name="emails"
             className="email-input Raleway"
             placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
           />
-          <button
-            type="submit"
-            className="submit-btn button"
-            id="button"
-            onClick={handleSubmit}
-          >
-            Submit
+          <button type="submit" className="submit-btn button" id="button">
+            Subscribe
           </button>
           <div
             className="text-display button"
             id="submited"
             style={{ display: "none" }}
           >
-            Submited
+            Subscribed
           </div>
         </form>
         <div className="copyright Raleway ">
